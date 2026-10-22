@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 150" role="img" aria-labelledby="title desc">
+  <title id="title">TrialIQ AI</title>
+  <desc id="desc">TrialIQ AI clinical intelligence product logo</desc>
+  <g fill="none" fill-rule="evenodd">
+    <text x="12" y="72" font-family="Arial, Helvetica, sans-serif" font-size="64" font-weight="500" letter-spacing="-3" fill="#9FC3FF">TrialIQ</text>
+    <text x="384" y="72" font-family="Arial, Helvetica, sans-serif" font-size="64" font-weight="500" letter-spacing="-3" fill="#9FC3FF">AI</text>
+    <circle cx="374" cy="52" r="7" fill="#9FC3FF"/>
+    <text x="18" y="103" font-family="Arial, Helvetica, sans-serif" font-size="10" font-weight="700" letter-spacing="2.8" fill="#7D9CCB">CLINICAL INTELLIGENCE</text>
+    <text x="18" y="122" font-family="Arial, Helvetica, sans-serif" font-size="10" font-weight="700" letter-spacing="2.8" fill="#7D9CCB">AI PRODUCT</text>
+  </g>
+</svg>

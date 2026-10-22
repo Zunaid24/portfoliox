@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Blinkit — Store Manager Widget · Zunaid Ahmed</title>
+<meta name="description" content="Redesigning Blinkit's store-manager widget to humanise a transactional checkout screen — three failed approaches, one real insight, and a design that worked.">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Blinkit — Store Manager Widget · Zunaid Ahmed">
+<meta property="og:description" content="From impersonal checkout widget to a human moment — personal copy, milestone recognition, live order context.">
+<meta property="og:image" content="../assets/case-studies/images/blinkit-store-manager-widget-thumb-1.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Blinkit — Store Manager Widget · Zunaid Ahmed">
+<meta name="twitter:description" content="From impersonal checkout widget to a human moment — personal copy, milestone recognition, live order context.">
+<meta name="twitter:image" content="../assets/case-studies/images/blinkit-store-manager-widget-thumb-1.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../css/site.css">
+<link rel="stylesheet" href="../css/case-study.css">
+</head>
+<body>
+
+<div class="cursor-dot" aria-hidden="true"></div>
+<div class="cursor-ring" aria-hidden="true"></div>
+<div class="grain" aria-hidden="true"></div>
+
+<header class="topbar" id="topbar">
+  <a href="../" class="brand">ZA<span class="brand-dot">.</span></a>
+  <nav class="topnav" aria-label="Primary">
+    <a href="../#work">Work</a>
+    <a href="../#experience">Experience</a>
+    <a href="../#system">Toolkit</a>
+    <a href="../#contact">Contact</a>
+  </nav>
+  <a class="topbar-cta" href="../assets/Zunaid_Ahmed_Resume.pdf" target="_blank" rel="noopener">Résumé ↗</a>
+  <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
+</header>
+
+<main>
+
+  <!-- HERO -->
+  <section class="cs-hero">
+    <a href="../" class="cs-back"><span class="cs-back-arrow">←</span> Back to portfolio</a>
+    <p class="cs-hero-tag">BLINKIT · Q-COMMERCE · UI/UX CASE STUDY</p>
+    <h1 class="cs-hero-title">Blinkit — Store Manager Widget</h1>
+    <p class="cs-hero-lede">
+      The checkout screen showed customers "A team member is packing your order." No name. No face. No
+      story. This project redesigned that widget into a human moment — and it took three failed approaches
+      before the real insight emerged: customers don't need information, they need connection.
+    </p>
+    <div class="cs-meta-row">
+      <div class="cs-meta-item">
+        <span class="cs-meta-label">ROLE</span>
+        <span class="cs-meta-value">UI/UX Designer</span>
+      </div>
+      <div class="cs-meta-item">
+        <span class="cs-meta-label">COMPANY</span>
+        <span class="cs-meta-value">Blinkit</span>
+      </div>
+      <div class="cs-meta-item">
+        <span class="cs-meta-label">TOOLS</span>
+        <span class="cs-meta-value">Figma · FigJam</span>
+      </div>
+      <div class="cs-meta-item">
+        <span class="cs-meta-label">PLATFORM</span>
+        <span class="cs-meta-value">iOS · Android</span>
+      </div>
+      <div class="cs-meta-item">
+        <span class="cs-meta-label">DURATION</span>
+        <span class="cs-meta-value">4 weeks</span>
+      </div>
+    </div>
+    <a class="cs-pdf-cta" href="../assets/case-studies/blinkit-store-manager-widget.pdf" target="_blank" rel="noopener">
+      View full PDF ↗
+    </a>
+    <figure class="cs-img-hero">
+      <img src="../assets/case-studies/images/blinkit-widget-cover.jpg" alt="Blinkit Store Manager Widget — before and after showing the humanised design">
+    </figure>
+  </section>
+
+  <!-- 01 OVERVIEW -->
+  <section class="cs-section">
+    <p class="cs-section-label">01 — OVERVIEW</p>
+    <h2 class="cs-section-title">A widget that was doing nothing</h2>
+    <div class="cs-body">
+      <p>
+        Blinkit's checkout screen showed a small widget in the order status section — designed to
+        surface the store manager packing the order. In its original form it said: "A team member
+        is packing your order." Nothing more.
+      </p>
+      <p>
+        The goal was to redesign this widget to reduce anxiety during the waiting period, build
+        trust in the platform, and create a moment of human connection between the customer and
+        the person behind their order.
+      </p>
+    </div>
+  </section>
+
+  <!-- 02 PROBLEM -->
+  <section class="cs-section">
+    <p class="cs-section-label">02 — PROBLEM</p>
+    <h2 class="cs-section-title">What the widget was missing</h2>
+    <div class="cs-problem-quote">
+      <p>"The widget existed — but it communicated nothing. No name, no face, no story. It was an
+      empty space where a human connection could have lived."</p>
+    </div>
+    <div class="cs-card-grid">
+      <div class="cs-card">
+        <p class="cs-card-num">01</p>
+        <h4>No identity</h4>
+        <p>"A team member" could be anyone. The anonymity removed all potential for warmth.</p>
+      </div>
+      <div class="cs-card">
+        <p class="cs-card-num">02</p>
+        <h4>No context</h4>
+        <p>Customers had no sense of what was happening — just a vague assurance that something was.</p>
+      </div>
+      <div class="cs-card">
+        <p class="cs-card-num">03</p>
+        <h4>Missed opportunity</h4>
+        <p>The checkout wait is the highest-anxiety moment of a delivery app — and the widget was doing nothing to reduce it.</p>
+      </div>
+      <div class="cs-card">
+        <p class="cs-card-num">04</p>
+        <h4>No differentiation</h4>
+        <p>Every other q-commerce app had the same generic packing status — this was a chance to be meaningfully different.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 03 USERS -->
+  <section class="cs-section">
+    <p class="cs-section-label">03 — USERS</p>
+    <h2 class="cs-section-title">Who sees this widget</h2>
+    <div class="cs-two-col">
+      <div class="cs-col">
+        <h4>Customer (order placed)</h4>
+        <ul>
+          <li>Just confirmed their order — now waiting</li>
+          <li>Moderate anxiety: will it be packed correctly? On time?</li>
+          <li>Checking the app every 30–60 seconds for status updates</li>
+          <li>Wants reassurance that a real person is handling their order</li>
+          <li>Interested in the person packing if the story is interesting</li>
+        </ul>
+      </div>
+      <div class="cs-col">
+        <h4>Store manager (being shown)</h4>
+        <ul>
+          <li>Packing 50–200 orders per shift</li>
+          <li>Taking pride in accuracy and speed</li>
+          <li>May have personal milestones (100th order, 2-year anniversary)</li>
+          <li>Deserves recognition for their work</li>
+          <li>The widget is a chance to feel seen and valued</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- 04 DESIGN PROCESS — three failed approaches -->
+  <section class="cs-section">
+    <p class="cs-section-label">04 — DESIGN PROCESS</p>
+    <h2 class="cs-section-title">Three approaches that didn't work</h2>
+    <div class="cs-body">
+      <p>
+        The most important part of this case study isn't the final design — it's what we tried before it.
+        Three approaches failed before the real insight emerged. Each failure taught us something specific.
+      </p>
+    </div>
+    <div class="cs-heuristic-list">
+      <div class="cs-heuristic-item">
+        <span class="cs-heuristic-num">ATTEMPT 01</span>
+        <div>
+          <h4>Photo + rating — failed</h4>
+          <p>Showing the manager's photo and a star rating felt like a driver-rating screen. Users felt they were being asked to evaluate someone before interacting with them. Trust went down, not up.</p>
+        </div>
+      </div>
+      <div class="cs-heuristic-item">
+        <span class="cs-heuristic-num">ATTEMPT 02</span>
+        <div>
+          <h4>Stats dashboard — failed</h4>
+          <p>Showing "Orders packed today: 47 · Accuracy: 98%" felt like a performance report, not a human introduction. Users found it cold and corporate.</p>
+        </div>
+      </div>
+      <div class="cs-heuristic-item">
+        <span class="cs-heuristic-num">ATTEMPT 03</span>
+        <div>
+          <h4>Long bio card — failed</h4>
+          <p>A photo + name + 3-sentence bio was too much to read during a brief checkout moment. Users skipped it entirely. The signal-to-attention ratio was wrong.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 05 KEY INSIGHTS -->
+  <section class="cs-section">
+    <p class="cs-section-label">05 — KEY INSIGHTS</p>
+    <h2 class="cs-section-title">The insight that unlocked the design</h2>
+    <div class="cs-heuristic-list">
+      <div class="cs-heuristic-item">
+        <span class="cs-heuristic-num">INSIGHT 01</span>
+        <div>
+          <h4>First-person language changes everything</h4>
+          <p>"A team member is packing your order" vs. "I'm packing your order" — the shift to first person immediately created a human presence. One word change, massive emotional difference.</p>
+        </div>
+      </div>
+      <div class="cs-heuristic-item">
+        <span class="cs-heuristic-num">INSIGHT 02</span>
+        <div>
+          <h4>Milestones create connection without biography</h4>
+          <p>"This is my 100th order today" or "2 years at Blinkit" — these micro-facts are fast to read, personally meaningful, and create immediate warmth without requiring sustained attention.</p>
+        </div>
+      </div>
+      <div class="cs-heuristic-item">
+        <span class="cs-heuristic-num">INSIGHT 03</span>
+        <div>
+          <h4>Live order context reduces anxiety</h4>
+          <p>Showing "Packing your mango + 4 other items" makes the packing feel real and in-progress — not abstract. It's reassuring evidence that work is happening right now.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 06 BEFORE VS AFTER -->
+  <section class="cs-section">
+    <p class="cs-section-label">06 — BEFORE VS AFTER</p>
+    <h2 class="cs-section-title">The redesign</h2>
+    <div class="cs-img-block">
+      <img src="../assets/case-studies/images/blinkit-widget-result.jpg" alt="Before and after comparison — generic 'team member' widget vs. personalised 'I'm packing your order' design with milestone badge">
+    </div>
+    <p class="cs-img-caption">Before: anonymous and cold. After: personal, warm, and live.</p>
+    <div class="cs-two-col" style="margin-top: var(--space-6);">
+      <div class="cs-col">
+        <h4>Before</h4>
+        <ul>
+          <li>"A team member is packing your order"</li>
+          <li>No name, no face, no story</li>
+          <li>No milestone or context</li>
+          <li>Static — same message regardless of what's happening</li>
+          <li>Nothing to reduce checkout anxiety</li>
+        </ul>
+      </div>
+      <div class="cs-col">
+        <h4>After</h4>
+        <ul>
+          <li>"I'm packing your order right now"</li>
+          <li>Manager's first name and photo</li>
+          <li>Milestone badge (100th order, 2 years, top packer)</li>
+          <li>Live order context: "Picking your mango + 4 items"</li>
+          <li>Immediate human warmth in a transactional moment</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- 07 KEY LEARNINGS -->
+  <section class="cs-section">
+    <p class="cs-section-label">07 — KEY LEARNINGS</p>
+    <h2 class="cs-section-title">What three failures taught me</h2>
+    <div class="cs-heuristic-list">
+      <div class="cs-heuristic-item">
+        <span class="cs-heuristic-num">LEARNING 01</span>
+        <div>
+          <h4>Failing fast is the design process</h4>
+          <p>The three failed approaches weren't wasted time — they systematically eliminated what didn't work and made the real insight visible. A "wrong" design is data, not failure.</p>
+        </div>
+      </div>
+      <div class="cs-heuristic-item">
+        <span class="cs-heuristic-num">LEARNING 02</span>
+        <div>
+          <h4>Grammar and voice are design tools</h4>
+          <p>Switching from third person to first person ("a team member" → "I'm") was a design decision — not a copywriting one. Voice and grammar shape the emotional register of an interface as powerfully as colour or layout.</p>
+        </div>
+      </div>
+      <div class="cs-heuristic-item">
+        <span class="cs-heuristic-num">LEARNING 03</span>
+        <div>
+          <h4>Design for both sides of a transaction</h4>
+          <p>We started focused on the customer experience — but the design that worked also gave something to the store manager: visibility, recognition, and a moment of pride. Good service design works in both directions.</p>
+        </div>
+      </div>
+    </div>
+    <div class="cs-closing" style="margin-top: var(--space-7);">
+      <p>The best UX improvement on this screen wasn't a layout change — it was a grammar change. That's the kind of insight that only emerges from iteration.</p>
+    </div>
+  </section>
+
+</main>
+
+<nav class="cs-next" aria-label="More case studies">
+  <p class="cs-next-title">NEXT PROJECTS</p>
+  <div class="cs-next-grid">
+    <a href="rapido-ambulance-mode.html" class="cs-next-card">
+      <p class="cs-next-card-tag">HEALTHCARE + MOBILITY</p>
+      <h4>Rapido — Ambulance Mode</h4>
+      <span class="cs-next-card-link">View case study →</span>
+    </a>
+    <a href="blinkit-heuristic-evaluation.html" class="cs-next-card">
+      <p class="cs-next-card-tag">HEURISTIC EVALUATION</p>
+      <h4>Blinkit — Usability Audit</h4>
+      <span class="cs-next-card-link">View case study →</span>
+    </a>
+    <a href="grabon-heuristic-evaluation.html" class="cs-next-card">
+      <p class="cs-next-card-tag">HEURISTIC EVALUATION</p>
+      <h4>GrabOn — Usability Audit &amp; Redesign</h4>
+      <span class="cs-next-card-link">View case study →</span>
+    </a>
+  </div>
+</nav>
+
+<footer class="site-footer">
+  <p>Zunaid Ahmed — Senior Product Designer, Hyderabad.</p>
+  <p class="mono">© <span id="year"></span></p>
+</footer>
+
+<button class="back-to-top" id="backToTop" aria-label="Back to top">↑</button>
+<script src="../js/site.js"></script>
+</body>
+</html>

@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Volopay — Virtual Cards · Zunaid Ahmed</title>
+<meta name="description" content="Designing a minimal virtual card creation and expense tracking flow for Volopay — replacing a complex UI with a clean, single-panel B2B experience.">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Volopay — Virtual Cards · Zunaid Ahmed">
+<meta property="og:description" content="Streamlined virtual card creation for enterprise accountants — single-panel flow, multi-currency, always-visible cost-to-company data.">
+<meta property="og:image" content="../assets/case-studies/images/volopay-virtual-cards-thumb-01.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Volopay — Virtual Cards · Zunaid Ahmed">
+<meta name="twitter:description" content="Streamlined virtual card creation for enterprise accountants — single-panel flow, multi-currency, always-visible cost-to-company data.">
+<meta name="twitter:image" content="../assets/case-studies/images/volopay-virtual-cards-thumb-01.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../css/site.css">
+<link rel="stylesheet" href="../css/case-study.css">
+</head>
+<body>
+
+<div class="cursor-dot" aria-hidden="true"></div>
+<div class="cursor-ring" aria-hidden="true"></div>
+<div class="grain" aria-hidden="true"></div>
+
+<header class="topbar" id="topbar">
+  <a href="../" class="brand">ZA<span class="brand-dot">.</span></a>
+  <nav class="topnav" aria-label="Primary">
+    <a href="../#work">Work</a>
+    <a href="../#experience">Experience</a>
+    <a href="../#system">Toolkit</a>
+    <a href="../#contact">Contact</a>
+  </nav>
+  <a class="topbar-cta" href="../assets/Zunaid_Ahmed_Resume.pdf" target="_blank" rel="noopener">Résumé ↗</a>
+  <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
+</header>
+
+<main>
+
+  <!-- HERO -->
+  <section class="cs-hero">
+    <a href="../" class="cs-back"><span class="cs-back-arrow">←</span> Back to portfolio</a>
+    <p class="cs-hero-tag">VOLOPAY · FINTECH · B2B SAAS · UI/UX CASE STUDY</p>
+    <h1 class="cs-hero-title">Volopay — Virtual Cards</h1>
+    <p class="cs-hero-lede">
+      Enterprise accountants were navigating a multi-step, context-switching workflow to issue a single
+      virtual card. This project collapsed that into a clean single-panel creation flow with multi-currency
+      support and always-visible cost-to-company data.
+    </p>
+    <div class="cs-meta-row">
+      <div class="cs-meta-item">
+        <span class="cs-meta-label">ROLE</span>
+        <span class="cs-meta-value">UI/UX Designer</span>
+      </div>
+      <div class="cs-meta-item">
+        <span class="cs-meta-label">COMPANY</span>
+        <span class="cs-meta-value">Volopay</span>
+      </div>
+      <div class="cs-meta-item">
+        <span class="cs-meta-label">TOOLS</span>
+        <span class="cs-meta-value">Figma · FigJam</span>
+      </div>
+      <div class="cs-meta-item">
+        <span class="cs-meta-label">PLATFORM</span>
+        <span class="cs-meta-value">Web (SaaS Dashboard)</span>
+      </div>
+      <div class="cs-meta-item">
+        <span class="cs-meta-label">DURATION</span>
+        <span class="cs-meta-value">6 weeks</span>
+      </div>
+    </div>
+    <a class="cs-pdf-cta" href="../assets/case-studies/volopay-virtual-cards.pdf" target="_blank" rel="noopener">
+      View full PDF ↗
+    </a>
+    <figure class="cs-img-hero">
+      <img src="../assets/case-studies/images/volopay-cover.jpg" alt="Volopay Virtual Cards — cover slide showing the card creation panel UI">
+    </figure>
+  </section>
+
+  <!-- 01 OVERVIEW -->
+  <section class="cs-section">
+    <p class="cs-section-label">01 — OVERVIEW</p>
+    <h2 class="cs-section-title">Simplifying enterprise spend management</h2>
+    <div class="cs-body">
+      <p>
+        Volopay is a B2B spend management platform serving finance and accounting teams at mid-market and
+        enterprise companies. The Virtual Cards feature lets accountants issue disposable or recurring virtual
+        cards to employees — controlling spend limits, currencies, and expiry dates from a single dashboard.
+      </p>
+      <p>
+        The existing flow required navigating across multiple screens, switching context between the card list
+        and creation form, and manually calculating cost-to-company for multi-currency cards. The redesign
+        collapsed this into a single right-panel drawer with inline currency conversion.
+      </p>
+    </div>
+  </section>
+
+  <!-- 02 PROBLEM -->
+  <section class="cs-section">
+    <p class="cs-section-label">02 — PROBLEM</p>
+    <h2 class="cs-section-title">The friction in the existing flow</h2>
+    <div class="cs-problem-quote">
+      <p>"Creating a virtual card required accountants to leave the card list, navigate to a form, fill in 8+ fields,
+      calculate currency conversion manually, and return to the list — every time."</p>
+    </div>
+    <div class="cs-card-grid">
+      <div class="cs-card">
+        <p class="cs-card-num">01</p>
+        <h4>Context switching</h4>
+        <p>Leaving the card list to create a new card broke mental flow — users lost their place on return.</p>
+      </div>
+      <div class="cs-card">
+        <p class="cs-card-num">02</p>
+        <h4>No currency conversion</h4>
+        <p>Multi-currency cards required accountants to manually calculate cost-to-company in home currency.</p>
+      </div>
+      <div class="cs-card">
+        <p class="cs-card-num">03</p>
+        <h4>Excessive form fields</h4>
+        <p>The creation form had 8+ fields shown simultaneously — overwhelming for a routine task.</p>
+      </div>
+      <div class="cs-card">
+        <p class="cs-card-num">04</p>
+        <h4>No spend visibility</h4>
+        <p>Accountants couldn't see team spend limits in context while setting an individual card limit.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 03 USERS -->
+  <section class="cs-section">
+    <p class="cs-section-label">03 — USERS</p>
+    <h2 class="cs-section-title">Who uses Volopay's Virtual Cards</h2>
+    <div class="cs-two-col">
+      <div class="cs-col">
+        <h4>Primary: Enterprise accountant</h4>
+        <ul>
+          <li>Finance or accounting team member at a 100–1000 person company</li>
+          <li>Issues 5–30 virtual cards per week for employees and vendors</li>
+          <li>Works across multiple currencies and teams simultaneously</li>
+          <li>Values speed and accuracy — errors in limits cost real money</li>
+          <li>Frustrated by repetitive, high-friction workflows</li>
+        </ul>
+      </div>
+      <div class="cs-col">
+        <h4>Secondary: Finance manager</h4>
+        <ul>
+          <li>Approves cards issued by accountants</li>
+          <li>Needs spend visibility across teams and currencies</li>
+          <li>Reviews historical card usage and limits</li>
+          <li>Wants audit trail and reporting built in</li>
+          <li>Less frequent user, higher stakes decisions</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- 04 RESEARCH -->
+  <section class="cs-section">
+    <p class="cs-section-label">04 — RESEARCH</p>
+    <h2 class="cs-section-title">Understanding the workflow</h2>
+    <div class="cs-body">
+      <p>
+        We conducted moderated usability sessions with 12 accountants across 5 companies using the existing
+        Volopay dashboard. We observed their card creation workflows, collected think-aloud data, and mapped
+        where they encountered friction, errors, and confusion.
+      </p>
+    </div>
+    <div class="cs-img-block">
+      <img src="../assets/case-studies/images/volopay-empathy.jpg" alt="User research synthesis — empathy map and pain point clustering from accountant interviews">
+    </div>
+    <div class="cs-img-block" style="margin-top: var(--space-4);">
+      <img src="../assets/case-studies/images/volopay-wireframes.jpg" alt="Early wireframe explorations for the virtual card creation panel">
+    </div>
+    <p class="cs-img-caption">Wireframe explorations — testing single panel vs. multi-step modal approaches</p>
+  </section>
+
+  <!-- 05 KEY INSIGHTS -->
+  <section class="cs-section">
+    <p class="cs-section-label">05 — KEY INSIGHTS</p>
+    <h2 class="cs-section-title">What shaped the design direction</h2>
+    <div class="cs-heuristic-list">
+      <div class="cs-heuristic-item">
+        <span class="cs-heuristic-num">INSIGHT 01</span>
+        <div>
+          <h4>Context is the most valuable asset in a dashboard</h4>
+          <p>Accountants wanted to see the card list while creating — to check existing limits and avoid duplicates. A drawer panel, not a full-page form, preserved this context.</p>
+        </div>
+      </div>
+      <div class="cs-heuristic-item">
+        <span class="cs-heuristic-num">INSIGHT 02</span>
+        <div>
+          <h4>Currency conversion should be invisible work</h4>
+          <p>Every accountant we observed stopped to open a calculator or exchange-rate tab. Inline conversion, shown in real-time as limit values are typed, removed this entirely.</p>
+        </div>
+      </div>
+      <div class="cs-heuristic-item">
+        <span class="cs-heuristic-num">INSIGHT 03</span>
+        <div>
+          <h4>Progressive disclosure reduces overwhelm without losing depth</h4>
+          <p>Showing the 3 most common fields upfront (employee, limit, currency), with advanced options available on expand, made the form feel simple without removing power-user functionality.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 06 DESIGN PROCESS -->
+  <section class="cs-section">
+    <p class="cs-section-label">06 — DESIGN PROCESS</p>
+    <h2 class="cs-section-title">From wireframes to final UI</h2>
+    <div class="cs-body">
+      <p>
+        We tested three structural approaches: a full-page form (rejected — loses context), a centred modal
+        (rejected — still blocks the list), and a right-panel drawer (chosen — keeps context while enabling creation).
+        Each approach was wireframed and tested with 4 accountants before moving to hi-fi.
+      </p>
+    </div>
+    <div class="cs-img-block">
+      <img src="../assets/case-studies/images/volopay-lofi.jpg" alt="Low-fidelity wireframes comparing full-page form, modal, and drawer panel approaches">
+    </div>
+    <p class="cs-img-caption">Three structural approaches tested before selecting the drawer panel</p>
+    <div class="cs-process-steps" style="margin-top: var(--space-6);">
+      <div class="cs-step">
+        <span class="cs-step-num">01</span>
+        <h4>Discovery</h4>
+        <p>Workflow mapping + pain point clustering</p>
+      </div>
+      <div class="cs-step">
+        <span class="cs-step-num">02</span>
+        <h4>Wireframes</h4>
+        <p>3 structural approaches tested</p>
+      </div>
+      <div class="cs-step">
+        <span class="cs-step-num">03</span>
+        <h4>Prototype</h4>
+        <p>Interactive Figma prototype</p>
+      </div>
+      <div class="cs-step">
+        <span class="cs-step-num">04</span>
+        <h4>Testing</h4>
+        <p>Moderated sessions with accountants</p>
+      </div>
+      <div class="cs-step">
+        <span class="cs-step-num">05</span>
+        <h4>Hi-Fi</h4>
+        <p>Final screens + dev handoff</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 07 FINAL SOLUTION -->
+  <section class="cs-section">
+    <p class="cs-section-label">07 — FINAL SOLUTION</p>
+    <h2 class="cs-section-title">The drawer panel that changed the workflow</h2>
+    <div class="cs-body">
+      <p>
+        The final solution is a right-side drawer panel that overlays the card list — preserving context
+        while enabling creation. Inline currency conversion shows cost-to-company in real-time.
+        Progressive disclosure keeps the form minimal by default, expandable for advanced settings.
+      </p>
+    </div>
+    <div class="cs-img-block">
+      <img src="../assets/case-studies/images/volopay-hifi.jpg" alt="High-fidelity final design — the virtual card creation drawer panel with inline currency conversion">
+    </div>
+    <p class="cs-img-caption">Final drawer panel — inline conversion, spend visibility, progressive disclosure</p>
+  </section>
+
+  <!-- 08 BEFORE VS AFTER -->
+  <section class="cs-section">
+    <p class="cs-section-label">08 — BEFORE VS AFTER</p>
+    <h2 class="cs-section-title">The workflow transformation</h2>
+    <div class="cs-two-col">
+      <div class="cs-col">
+        <h4>Before</h4>
+        <ul>
+          <li>Navigate away from card list to access creation form</li>
+          <li>Fill in 8+ fields on a full-page form</li>
+          <li>Manually calculate currency conversion</li>
+          <li>Return to card list — context lost</li>
+          <li>No visibility of existing team limits while setting new limits</li>
+        </ul>
+      </div>
+      <div class="cs-col">
+        <h4>After</h4>
+        <ul>
+          <li>Create card without leaving the card list view</li>
+          <li>3 primary fields upfront, advanced settings on expand</li>
+          <li>Inline real-time currency conversion as you type</li>
+          <li>Card list remains visible throughout creation</li>
+          <li>Team spend summary visible in context</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- 09 BUSINESS IMPACT -->
+  <section class="cs-section">
+    <p class="cs-section-label">09 — BUSINESS IMPACT</p>
+    <h2 class="cs-section-title">Outcomes</h2>
+    <div class="cs-stats">
+      <div class="cs-stat">
+        <span class="cs-stat-num">1</span>
+        <span class="cs-stat-label">panel — no context switching</span>
+      </div>
+      <div class="cs-stat">
+        <span class="cs-stat-num">0</span>
+        <span class="cs-stat-label">manual currency calculations needed</span>
+      </div>
+      <div class="cs-stat">
+        <span class="cs-stat-num">3</span>
+        <span class="cs-stat-label">primary fields visible by default</span>
+      </div>
+      <div class="cs-stat">
+        <span class="cs-stat-num">↑</span>
+        <span class="cs-stat-label">accountant satisfaction in moderated testing</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- 10 KEY LEARNINGS -->
+  <section class="cs-section">
+    <p class="cs-section-label">10 — KEY LEARNINGS</p>
+    <h2 class="cs-section-title">What this project taught me</h2>
+    <div class="cs-heuristic-list">
+      <div class="cs-heuristic-item">
+        <span class="cs-heuristic-num">LEARNING 01</span>
+        <div>
+          <h4>B2B design is about workflow continuity, not just task completion</h4>
+          <p>Enterprise users have mental models shaped by their entire workflow — not just the current screen. Preserving context (keeping the card list visible) was more valuable than any individual UX improvement.</p>
+        </div>
+      </div>
+      <div class="cs-heuristic-item">
+        <span class="cs-heuristic-num">LEARNING 02</span>
+        <div>
+          <h4>Inline automation earns trust faster than explanatory copy</h4>
+          <p>Showing the converted amount update in real-time as users typed built confidence immediately — without requiring a tooltip, explainer, or hover state.</p>
+        </div>
+      </div>
+      <div class="cs-heuristic-item">
+        <span class="cs-heuristic-num">LEARNING 03</span>
+        <div>
+          <h4>Progressive disclosure is a policy, not just a pattern</h4>
+          <p>It worked here because we had clear data on what 80% of users needed. Without that research grounding, it risks hiding important controls users can't find. Know your users before hiding things.</p>
+        </div>
+      </div>
+    </div>
+    <div class="cs-closing" style="margin-top: var(--space-7);">
+      <p>Enterprise products earn their complexity. Good B2B design removes the complexity users shouldn't have to manage.</p>
+    </div>
+  </section>
+
+</main>
+
+<nav class="cs-next" aria-label="More case studies">
+  <p class="cs-next-title">NEXT PROJECTS</p>
+  <div class="cs-next-grid">
+    <a href="rapido-ambulance-mode.html" class="cs-next-card">
+      <p class="cs-next-card-tag">HEALTHCARE + MOBILITY</p>
+      <h4>Rapido — Ambulance Mode</h4>
+      <span class="cs-next-card-link">View case study →</span>
+    </a>
+    <a href="emax-product-comparison.html" class="cs-next-card">
+      <p class="cs-next-card-tag">ECOMMERCE</p>
+      <h4>Emax — Product Comparison</h4>
+      <span class="cs-next-card-link">View case study →</span>
+    </a>
+    <a href="tesla-infotainment.html" class="cs-next-card">
+      <p class="cs-next-card-tag">AUTOMOTIVE · IN-CAR UX</p>
+      <h4>Tesla — Infotainment System</h4>
+      <span class="cs-next-card-link">View case study →</span>
+    </a>
+  </div>
+</nav>
+
+<footer class="site-footer">
+  <p>Zunaid Ahmed — Senior Product Designer, Hyderabad.</p>
+  <p class="mono">© <span id="year"></span></p>
+</footer>
+
+<button class="back-to-top" id="backToTop" aria-label="Back to top">↑</button>
+<script src="../js/site.js"></script>
+</body>
+</html>

@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Blinkit — Usability Audit · Zunaid Ahmed</title>
+<meta name="description" content="A full Nielsen 10-heuristic evaluation of the Blinkit app — identifying usability gaps in error messaging, user control, and visual clarity.">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Blinkit — Usability Audit · Zunaid Ahmed">
+<meta property="og:description" content="Full Nielsen 10-heuristic evaluation of the Blinkit app — performance gaps in H3, H8, H9 identified with annotated evidence.">
+<meta property="og:image" content="../assets/case-studies/images/blinkit-heuristic-evaluation-thumb-1.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Blinkit — Usability Audit · Zunaid Ahmed">
+<meta name="twitter:description" content="Full Nielsen 10-heuristic evaluation of the Blinkit app — performance gaps in H3, H8, H9 identified with annotated evidence.">
+<meta name="twitter:image" content="../assets/case-studies/images/blinkit-heuristic-evaluation-thumb-1.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../css/site.css">
+<link rel="stylesheet" href="../css/case-study.css">
+</head>
+<body>
+
+<div class="cursor-dot" aria-hidden="true"></div>
+<div class="cursor-ring" aria-hidden="true"></div>
+<div class="grain" aria-hidden="true"></div>
+
+<header class="topbar" id="topbar">
+  <a href="../" class="brand">ZA<span class="brand-dot">.</span></a>
+  <nav class="topnav" aria-label="Primary">
+    <a href="../#work">Work</a>
+    <a href="../#experience">Experience</a>
+    <a href="../#system">Toolkit</a>
+    <a href="../#contact">Contact</a>
+  </nav>
+  <a class="topbar-cta" href="../assets/Zunaid_Ahmed_Resume.pdf" target="_blank" rel="noopener">Résumé ↗</a>
+  <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
+</header>
+
+<main>
+
+  <!-- HERO -->
+  <section class="cs-hero">
+    <a href="../" class="cs-back"><span class="cs-back-arrow">←</span> Back to portfolio</a>
+    <p class="cs-hero-tag">BLINKIT · HEURISTIC EVALUATION · UX RESEARCH</p>
+    <h1 class="cs-hero-title">Blinkit — Usability Audit</h1>
+    <p class="cs-hero-lede">
+      A systematic evaluation of Blinkit's live app against Nielsen's 10 usability heuristics —
+      identifying where a high-performing product has specific, fixable gaps in error messaging,
+      user control, and visual clarity, while validating the strength of its core ordering flow.
+    </p>
+    <div class="cs-meta-row">
+      <div class="cs-meta-item">
+        <span class="cs-meta-label">TYPE</span>
+        <span class="cs-meta-value">Heuristic Evaluation</span>
+      </div>
+      <div class="cs-meta-item">
+        <span class="cs-meta-label">PRODUCT</span>
+        <span class="cs-meta-value">Blinkit (live app)</span>
+      </div>
+      <div class="cs-meta-item">
+        <span class="cs-meta-label">FRAMEWORK</span>
+        <span class="cs-meta-value">Nielsen's 10 Heuristics</span>
+      </div>
+      <div class="cs-meta-item">
+        <span class="cs-meta-label">HEURISTICS EVALUATED</span>
+        <span class="cs-meta-value">All 10</span>
+      </div>
+      <div class="cs-meta-item">
+        <span class="cs-meta-label">DURATION</span>
+        <span class="cs-meta-value">3 weeks</span>
+      </div>
+    </div>
+    <a class="cs-pdf-cta" href="../assets/case-studies/blinkit-heuristic-evaluation.pdf" target="_blank" rel="noopener">
+      View full PDF ↗
+    </a>
+    <figure class="cs-img-hero">
+      <img src="../assets/case-studies/images/blinkit-heuristic-cover.jpg" alt="Blinkit heuristic evaluation — annotated screenshots showing usability findings across the app">
+    </figure>
+  </section>
+
+  <!-- 01 OVERVIEW -->
+  <section class="cs-section">
+    <p class="cs-section-label">01 — OVERVIEW</p>
+    <h2 class="cs-section-title">Why evaluate Blinkit?</h2>
+    <div class="cs-body">
+      <p>
+        Blinkit is India's leading quick-commerce app — delivering groceries and essentials in under 10 minutes.
+        It's a product that works well by most measures: high repeat usage, strong NPS, fast flows. But no
+        high-performing product is free of usability gaps. This evaluation tests that assumption systematically.
+      </p>
+      <p>
+        A heuristic evaluation is expert-driven — not user-tested. It applies a structured framework
+        (Nielsen's 10 heuristics) to identify violations that are likely to cause friction, confusion,
+        or error — even in a product users love.
+      </p>
+    </div>
+  </section>
+
+  <!-- 02 METHODOLOGY -->
+  <section class="cs-section">
+    <p class="cs-section-label">02 — METHODOLOGY</p>
+    <h2 class="cs-section-title">How the evaluation was conducted</h2>
+    <div class="cs-body">
+      <p>
+        Each of Nielsen's 10 heuristics was evaluated across the full Blinkit app — from onboarding
+        and browsing, through cart and checkout, to order tracking and account management. Every finding
+        is rated by severity (0 = not a problem, 4 = usability catastrophe) and supported by annotated
+        screenshots.
+      </p>
+    </div>
+    <div class="cs-process-steps">
+      <div class="cs-step">
+        <span class="cs-step-num">01</span>
+        <h4>Scope</h4>
+        <p>Full app — all flows</p>
+      </div>
+      <div class="cs-step">
+        <span class="cs-step-num">02</span>
+        <h4>Framework</h4>
+        <p>Nielsen's 10 heuristics</p>
+      </div>
+      <div class="cs-step">
+        <span class="cs-step-num">03</span>
+        <h4>Evidence</h4>
+        <p>Annotated screenshots</p>
+      </div>
+      <div class="cs-step">
+        <span class="cs-step-num">04</span>
+        <h4>Rating</h4>
+        <p>0–4 severity scale per finding</p>
+      </div>
+      <div class="cs-step">
+        <span class="cs-step-num">05</span>
+        <h4>Summary</h4>
+        <p>Priority fixes + validated strengths</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 03 FINDINGS -->
+  <section class="cs-section">
+    <p class="cs-section-label">03 — FINDINGS</p>
+    <h2 class="cs-section-title">Where Blinkit underperforms</h2>
+    <div class="cs-heuristic-list">
+      <div class="cs-heuristic-item">
+        <span class="cs-heuristic-num">H1 — PASS</span>
+        <div>
+          <h4>Visibility of System Status</h4>
+          <p>Strong. Order status, delivery ETA, and packing progress are clearly communicated throughout the flow. The real-time countdown timer is an excellent implementation.</p>
+        </div>
+      </div>
+      <div class="cs-heuristic-item">
+        <span class="cs-heuristic-num">H2 — PASS</span>
+        <div>
+          <h4>Match Between System and Real World</h4>
+          <p>Language is clear and natural. Product names, categories, and action labels match the mental model of a grocery shopper. No significant violations found.</p>
+        </div>
+      </div>
+      <div class="cs-heuristic-item">
+        <span class="cs-heuristic-num">H3 — GAP · SEVERITY 3</span>
+        <div>
+          <h4>User Control and Freedom</h4>
+          <p>Once a substitution is accepted, it cannot be reversed without cancelling the entire order. The lack of a "undo substitution" path forces users into an all-or-nothing decision — a significant control gap in a time-pressured flow.</p>
+        </div>
+      </div>
+      <div class="cs-heuristic-item">
+        <span class="cs-heuristic-num">H4 — PASS</span>
+        <div>
+          <h4>Consistency and Standards</h4>
+          <p>The interface follows standard mobile patterns consistently. Add/remove buttons, cart interactions, and navigation are predictable across sections.</p>
+        </div>
+      </div>
+      <div class="cs-heuristic-item">
+        <span class="cs-heuristic-num">H5 — PASS</span>
+        <div>
+          <h4>Error Prevention</h4>
+          <p>Cart errors are handled well — duplicate additions are handled gracefully, and minimum order value warnings appear before checkout.</p>
+        </div>
+      </div>
+      <div class="cs-heuristic-item">
+        <span class="cs-heuristic-num">H6 — PASS</span>
+        <div>
+          <h4>Recognition Over Recall</h4>
+          <p>Past orders, recent searches, and order history are prominently accessible. Users don't need to remember product names to reorder.</p>
+        </div>
+      </div>
+      <div class="cs-heuristic-item">
+        <span class="cs-heuristic-num">H7 — PASS</span>
+        <div>
+          <h4>Flexibility and Efficiency of Use</h4>
+          <p>Reorder shortcuts, quick-add from product lists, and schedule delivery serve both new and power users effectively.</p>
+        </div>
+      </div>
+      <div class="cs-heuristic-item">
+        <span class="cs-heuristic-num">H8 — GAP · SEVERITY 2</span>
+        <div>
+          <h4>Aesthetic and Minimalist Design</h4>
+          <p>The promotional banner layer (3–5 banners on the home screen) competes for attention with the product search and browsing flow. During active shopping tasks, the promotional density creates visual noise that slows users down.</p>
+        </div>
+      </div>
+      <div class="cs-heuristic-item">
+        <span class="cs-heuristic-num">H9 — GAP · SEVERITY 3</span>
+        <div>
+          <h4>Help Users Recognise, Diagnose, and Recover from Errors</h4>
+          <p>Payment failure messages say "Payment failed. Try again." with no diagnostic information — no indication of whether the issue is with the card, the network, or Blinkit's system. Users are left guessing what to fix.</p>
+        </div>
+      </div>
+      <div class="cs-heuristic-item">
+        <span class="cs-heuristic-num">H10 — PASS</span>
+        <div>
+          <h4>Help and Documentation</h4>
+          <p>In-app chat support is accessible throughout the order flow. FAQ content is appropriately placed and written in plain language.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 04 VISUAL EVIDENCE -->
+  <section class="cs-section">
+    <p class="cs-section-label">04 — VISUAL EVIDENCE</p>
+    <h2 class="cs-section-title">Annotated screenshots</h2>
+    <div class="cs-img-block">
+      <img src="../assets/case-studies/images/blinkit-heuristic-eval.jpg" alt="Annotated screenshots showing H3 substitution gap — no undo path after accepting a product substitution">
+    </div>
+    <p class="cs-img-caption">H3 finding: substitution acceptance with no undo path</p>
+    <div class="cs-img-block" style="margin-top: var(--space-4);">
+      <img src="../assets/case-studies/images/blinkit-heuristic-eval2.jpg" alt="Annotated screenshots showing H8 and H9 findings — promotional banner density and vague payment failure messages">
+    </div>
+    <p class="cs-img-caption">H8 and H9 findings: promotional overload and non-diagnostic error messages</p>
+  </section>
+
+  <!-- 05 SUMMARY -->
+  <section class="cs-section">
+    <p class="cs-section-label">05 — SUMMARY</p>
+    <h2 class="cs-section-title">Priority fixes and validated strengths</h2>
+    <div class="cs-two-col">
+      <div class="cs-col">
+        <h4>Priority fixes</h4>
+        <ul>
+          <li>Add undo substitution — even within a short time window (H3, Severity 3)</li>
+          <li>Improve payment error messages with diagnostic context (H9, Severity 3)</li>
+          <li>Reduce homepage banner density during active shopping sessions (H8, Severity 2)</li>
+        </ul>
+      </div>
+      <div class="cs-col">
+        <h4>Validated strengths</h4>
+        <ul>
+          <li>Excellent real-time order status and ETA communication (H1)</li>
+          <li>Natural, grocery-appropriate language throughout (H2)</li>
+          <li>Strong reorder and recall features for power users (H6)</li>
+          <li>Accessible in-app support at every stage (H10)</li>
+        </ul>
+      </div>
+    </div>
+    <div class="cs-closing" style="margin-top: var(--space-7);">
+      <p>Heuristic evaluation finds the fixable gaps in products that users already love — the highest-leverage kind of UX work.</p>
+    </div>
+  </section>
+
+</main>
+
+<nav class="cs-next" aria-label="More case studies">
+  <p class="cs-next-title">NEXT PROJECTS</p>
+  <div class="cs-next-grid">
+    <a href="rapido-ambulance-mode.html" class="cs-next-card">
+      <p class="cs-next-card-tag">HEALTHCARE + MOBILITY</p>
+      <h4>Rapido — Ambulance Mode</h4>
+      <span class="cs-next-card-link">View case study →</span>
+    </a>
+    <a href="blinkit-store-manager-widget.html" class="cs-next-card">
+      <p class="cs-next-card-tag">Q-COMMERCE</p>
+      <h4>Blinkit — Store Manager Widget</h4>
+      <span class="cs-next-card-link">View case study →</span>
+    </a>
+    <a href="grabon-heuristic-evaluation.html" class="cs-next-card">
+      <p class="cs-next-card-tag">HEURISTIC EVALUATION</p>
+      <h4>GrabOn — Usability Audit &amp; Redesign</h4>
+      <span class="cs-next-card-link">View case study →</span>
+    </a>
+  </div>
+</nav>
+
+<footer class="site-footer">
+  <p>Zunaid Ahmed — Senior Product Designer, Hyderabad.</p>
+  <p class="mono">© <span id="year"></span></p>
+</footer>
+
+<button class="back-to-top" id="backToTop" aria-label="Back to top">↑</button>
+<script src="../js/site.js"></script>
+</body>
+</html>

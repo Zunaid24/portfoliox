@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>GrabOn — Usability Audit &amp; Redesign · Zunaid Ahmed</title>
+<meta name="description" content="Heuristic evaluation of GrabOn's coupon-redemption flow, followed by a full redesign — wider code field, accordion terms, thumb-reachable actions.">
+<meta property="og:type" content="article">
+<meta property="og:title" content="GrabOn — Usability Audit &amp; Redesign · Zunaid Ahmed">
+<meta property="og:description" content="Nielsen heuristic evaluation of GrabOn + full coupon card redesign — ergonomic, one-handed, friction-reduced.">
+<meta property="og:image" content="../assets/case-studies/images/grabon-heuristic-evaluation-thumb-01.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="GrabOn — Usability Audit &amp; Redesign · Zunaid Ahmed">
+<meta name="twitter:description" content="Nielsen heuristic evaluation of GrabOn + full coupon card redesign — ergonomic, one-handed, friction-reduced.">
+<meta name="twitter:image" content="../assets/case-studies/images/grabon-heuristic-evaluation-thumb-01.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../css/site.css">
+<link rel="stylesheet" href="../css/case-study.css">
+</head>
+<body>
+
+<div class="cursor-dot" aria-hidden="true"></div>
+<div class="cursor-ring" aria-hidden="true"></div>
+<div class="grain" aria-hidden="true"></div>
+
+<header class="topbar" id="topbar">
+  <a href="../" class="brand">ZA<span class="brand-dot">.</span></a>
+  <nav class="topnav" aria-label="Primary">
+    <a href="../#work">Work</a>
+    <a href="../#experience">Experience</a>
+    <a href="../#system">Toolkit</a>
+    <a href="../#contact">Contact</a>
+  </nav>
+  <a class="topbar-cta" href="../assets/Zunaid_Ahmed_Resume.pdf" target="_blank" rel="noopener">Résumé ↗</a>
+  <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
+</header>
+
+<main>
+
+  <!-- HERO -->
+  <section class="cs-hero">
+    <a href="../" class="cs-back"><span class="cs-back-arrow">←</span> Back to portfolio</a>
+    <p class="cs-hero-tag">GRABON · HEURISTIC EVALUATION + REDESIGN · UX RESEARCH</p>
+    <h1 class="cs-hero-title">GrabOn — Usability Audit &amp; Redesign</h1>
+    <p class="cs-hero-lede">
+      GrabOn is India's largest coupon platform — millions of users rely on it to find and redeem discount codes.
+      A heuristic evaluation revealed specific friction points in the coupon card itself: a code field too narrow
+      to read, terms so long they buried the call to action, and a menu placed where no thumb could comfortably reach it.
+    </p>
+    <div class="cs-meta-row">
+      <div class="cs-meta-item">
+        <span class="cs-meta-label">TYPE</span>
+        <span class="cs-meta-value">Heuristic Evaluation + Redesign</span>
+      </div>
+      <div class="cs-meta-item">
+        <span class="cs-meta-label">PRODUCT</span>
+        <span class="cs-meta-value">GrabOn (live app)</span>
+      </div>
+      <div class="cs-meta-item">
+        <span class="cs-meta-label">FRAMEWORK</span>
+        <span class="cs-meta-value">Nielsen's 10 Heuristics</span>
+      </div>
+      <div class="cs-meta-item">
+        <span class="cs-meta-label">DELIVERABLE</span>
+        <span class="cs-meta-value">Evaluation + Redesigned Coupon Card</span>
+      </div>
+      <div class="cs-meta-item">
+        <span class="cs-meta-label">DURATION</span>
+        <span class="cs-meta-value">3 weeks</span>
+      </div>
+    </div>
+    <a class="cs-pdf-cta" href="../assets/case-studies/grabon-heuristic-evaluation.pdf" target="_blank" rel="noopener">
+      View full PDF ↗
+    </a>
+    <figure class="cs-img-hero">
+      <img src="../assets/case-studies/images/grabon-cover.jpg" alt="GrabOn usability audit — cover showing the coupon card evaluation framework">
+    </figure>
+  </section>
+
+  <!-- 01 ABOUT GRABON -->
+  <section class="cs-section">
+    <p class="cs-section-label">01 — OVERVIEW</p>
+    <h2 class="cs-section-title">India's largest coupon platform</h2>
+    <div class="cs-body">
+      <p>
+        GrabOn aggregates discount codes, cashback offers, and deals from thousands of brands across ecommerce,
+        travel, food, and entertainment. Users browse and apply codes during checkout on third-party sites —
+        making the coupon card the most important UI element in the product.
+      </p>
+      <p>
+        A coupon that's hard to copy, read, or understand is a coupon that doesn't get used — directly reducing
+        both user satisfaction and GrabOn's conversion metrics. This project evaluated the coupon card against
+        Nielsen's heuristics and redesigned it based on the findings.
+      </p>
+    </div>
+  </section>
+
+  <!-- 02 HEURISTIC EVALUATION -->
+  <section class="cs-section">
+    <p class="cs-section-label">02 — HEURISTIC EVALUATION</p>
+    <h2 class="cs-section-title">What the evaluation found</h2>
+    <div class="cs-heuristic-list">
+      <div class="cs-heuristic-item">
+        <span class="cs-heuristic-num">H1 — PASS</span>
+        <div>
+          <h4>Visibility of System Status</h4>
+          <p>Users can see their saved coupons, recently used codes, and expiry dates. Status is clearly communicated.</p>
+        </div>
+      </div>
+      <div class="cs-heuristic-item">
+        <span class="cs-heuristic-num">H3 — GAP · SEVERITY 3</span>
+        <div>
+          <h4>User Control and Freedom</h4>
+          <p>Once a coupon is copied, there's no "uncopy" — which is expected — but the overflow menu (three dots) is placed in the top-right corner, outside comfortable one-handed thumb reach for most users.</p>
+        </div>
+      </div>
+      <div class="cs-heuristic-item">
+        <span class="cs-heuristic-num">H4 — GAP · SEVERITY 2</span>
+        <div>
+          <h4>Consistency and Standards</h4>
+          <p>The code field width varies across different coupon cards — sometimes truncating long codes (e.g. "SAVE20EXTRA" becomes "SAVE20EX..." with no tap-to-expand). This breaks a basic expectation of code legibility.</p>
+        </div>
+      </div>
+      <div class="cs-heuristic-item">
+        <span class="cs-heuristic-num">H6 — GAP · SEVERITY 2</span>
+        <div>
+          <h4>Recognition Over Recall</h4>
+          <p>Terms and conditions are displayed as a full-text block by default — 3–8 lines of fine print that visually dominate the card. The primary action (Copy Code) is buried below the terms.</p>
+        </div>
+      </div>
+      <div class="cs-heuristic-item">
+        <span class="cs-heuristic-num">H8 — GAP · SEVERITY 2</span>
+        <div>
+          <h4>Aesthetic and Minimalist Design</h4>
+          <p>The coupon card contains: brand logo, discount value, offer title, code field, terms (3–8 lines), expiry, and share/save/report actions — all simultaneously visible. The visual hierarchy makes it hard to find the code field quickly.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 03 USERS -->
+  <section class="cs-section">
+    <p class="cs-section-label">03 — USERS</p>
+    <h2 class="cs-section-title">Who uses GrabOn and how</h2>
+    <div class="cs-two-col">
+      <div class="cs-col">
+        <h4>The deal hunter</h4>
+        <ul>
+          <li>Searches for coupons before every online purchase</li>
+          <li>Uses GrabOn on mobile during checkout — one-handed</li>
+          <li>Needs to copy a code quickly and switch back to the retailer</li>
+          <li>Has low tolerance for friction at the point of code copying</li>
+          <li>Reads terms only if they're suspicious about validity</li>
+        </ul>
+      </div>
+      <div class="cs-col">
+        <h4>The occasional saver</h4>
+        <ul>
+          <li>Arrives on GrabOn from a Google search</li>
+          <li>Unfamiliar with the platform's layout</li>
+          <li>Needs to understand the offer quickly without reading</li>
+          <li>More likely to read terms before using</li>
+          <li>Converts if the code works on first attempt</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- 04 KEY INSIGHTS -->
+  <section class="cs-section">
+    <p class="cs-section-label">04 — KEY INSIGHTS</p>
+    <h2 class="cs-section-title">What drove the redesign decisions</h2>
+    <div class="cs-heuristic-list">
+      <div class="cs-heuristic-item">
+        <span class="cs-heuristic-num">INSIGHT 01</span>
+        <div>
+          <h4>The code is the product — it should be the visual hero</h4>
+          <p>Users come to GrabOn for one thing: the coupon code. Every other element on the card should support that primary goal — not compete with it. The code field needed to be the most prominent element.</p>
+        </div>
+      </div>
+      <div class="cs-heuristic-item">
+        <span class="cs-heuristic-num">INSIGHT 02</span>
+        <div>
+          <h4>Terms don't need to be read first — they need to be available</h4>
+          <p>Most users don't read terms before copying. Progressive disclosure (accordion) lets users who do want to check terms easily expand them, without forcing all users to scroll past them first.</p>
+        </div>
+      </div>
+      <div class="cs-heuristic-item">
+        <span class="cs-heuristic-num">INSIGHT 03</span>
+        <div>
+          <h4>Ergonomics are UX design</h4>
+          <p>Placing a three-dot menu in the top-right on a phone requires a grip shift or two-handed use. Moving actions to the bottom of the card (within thumb reach) is a usability improvement, not just a preference.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 05 REDESIGN -->
+  <section class="cs-section">
+    <p class="cs-section-label">05 — REDESIGN</p>
+    <h2 class="cs-section-title">The redesigned coupon card</h2>
+    <div class="cs-body">
+      <p>
+        The redesign applies a clear hierarchy: brand + discount at the top, full-width code field with
+        one-tap copy in the middle, accordion terms below, and action buttons (share, save, report) at the
+        bottom — within thumb reach. The code field is always full-width, truncation is eliminated.
+      </p>
+    </div>
+    <div class="cs-img-block">
+      <img src="../assets/case-studies/images/grabon-eval.jpg" alt="Annotated original coupon card showing H3, H4, H6, and H8 violations with severity ratings">
+    </div>
+    <p class="cs-img-caption">Annotated original card — violations mapped to specific heuristics</p>
+    <div class="cs-img-block" style="margin-top: var(--space-4);">
+      <img src="../assets/case-studies/images/grabon-redesign.jpg" alt="Redesigned coupon card — wider code field, accordion terms, bottom action bar within thumb reach">
+    </div>
+    <p class="cs-img-caption">Redesigned card — code as hero, accordion T&amp;Cs, thumb-reachable actions</p>
+  </section>
+
+  <!-- 06 BEFORE VS AFTER -->
+  <section class="cs-section">
+    <p class="cs-section-label">06 — BEFORE VS AFTER</p>
+    <h2 class="cs-section-title">The specific changes made</h2>
+    <div class="cs-two-col">
+      <div class="cs-col">
+        <h4>Before</h4>
+        <ul>
+          <li>Code field: variable width, often truncated</li>
+          <li>Terms: 3–8 lines of full text, always visible, above CTA</li>
+          <li>Actions: top-right overflow menu, outside thumb reach</li>
+          <li>Copy button: small, placed alongside the code field</li>
+          <li>Visual hierarchy: brand → title → terms → code → actions</li>
+        </ul>
+      </div>
+      <div class="cs-col">
+        <h4>After</h4>
+        <ul>
+          <li>Code field: always full-width, code always fully visible</li>
+          <li>Terms: accordion — collapsed by default, expandable on tap</li>
+          <li>Actions: bottom bar — share, save, report all within thumb reach</li>
+          <li>Copy button: full-width, primary, immediately below code field</li>
+          <li>Visual hierarchy: discount → code → copy → terms → actions</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- 07 KEY LEARNINGS -->
+  <section class="cs-section">
+    <p class="cs-section-label">07 — KEY LEARNINGS</p>
+    <h2 class="cs-section-title">What this project taught me</h2>
+    <div class="cs-heuristic-list">
+      <div class="cs-heuristic-item">
+        <span class="cs-heuristic-num">LEARNING 01</span>
+        <div>
+          <h4>Expert evaluation is faster than user research for known friction patterns</h4>
+          <p>A heuristic evaluation identified actionable, specific problems in 3 weeks — problems that a usability study would take 6–8 weeks to surface. The two methods are complementary, not competitive. Start with heuristics, validate with users.</p>
+        </div>
+      </div>
+      <div class="cs-heuristic-item">
+        <span class="cs-heuristic-num">LEARNING 02</span>
+        <div>
+          <h4>The most important element should be the most prominent</h4>
+          <p>The coupon code is the entire reason someone visits GrabOn — yet it was buried below terms and beside a tiny copy button. Hierarchy should reflect user intent, not just visual convention.</p>
+        </div>
+      </div>
+      <div class="cs-heuristic-item">
+        <span class="cs-heuristic-num">LEARNING 03</span>
+        <div>
+          <h4>Progressive disclosure is about trust, not just clarity</h4>
+          <p>Accordion terms don't hide information — they put it where users who want it can find it, while not forcing it on users who don't. It's a design that trusts users to seek what they need.</p>
+        </div>
+      </div>
+    </div>
+    <div class="cs-closing" style="margin-top: var(--space-7);">
+      <p>Heuristic evaluation is one of the highest-ROI methods in a designer's toolkit — structured, fast, and directly actionable.</p>
+    </div>
+  </section>
+
+</main>
+
+<nav class="cs-next" aria-label="More case studies">
+  <p class="cs-next-title">NEXT PROJECTS</p>
+  <div class="cs-next-grid">
+    <a href="rapido-ambulance-mode.html" class="cs-next-card">
+      <p class="cs-next-card-tag">HEALTHCARE + MOBILITY</p>
+      <h4>Rapido — Ambulance Mode</h4>
+      <span class="cs-next-card-link">View case study →</span>
+    </a>
+    <a href="blinkit-heuristic-evaluation.html" class="cs-next-card">
+      <p class="cs-next-card-tag">HEURISTIC EVALUATION</p>
+      <h4>Blinkit — Usability Audit</h4>
+      <span class="cs-next-card-link">View case study →</span>
+    </a>
+    <a href="blinkit-store-manager-widget.html" class="cs-next-card">
+      <p class="cs-next-card-tag">Q-COMMERCE</p>
+      <h4>Blinkit — Store Manager Widget</h4>
+      <span class="cs-next-card-link">View case study →</span>
+    </a>
+  </div>
+</nav>
+
+<footer class="site-footer">
+  <p>Zunaid Ahmed — Senior Product Designer, Hyderabad.</p>
+  <p class="mono">© <span id="year"></span></p>
+</footer>
+
+<button class="back-to-top" id="backToTop" aria-label="Back to top">↑</button>
+<script src="../js/site.js"></script>
+</body>
+</html>

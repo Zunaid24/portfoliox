@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rapido Ambulance Mode — Zunaid Ahmed</title>
+<meta name="description" content="Designing an emergency ambulance booking flow inside Rapido that cuts a 15–20 min phone scramble to a sub-60-second guided booking with live ICU visibility.">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Rapido Ambulance Mode — Zunaid Ahmed">
+<meta property="og:description" content="Emergency ambulance booking: 4.2× faster than phone calls, 91% satisfaction, 68% panic reduction.">
+<meta property="og:image" content="../assets/case-studies/images/rapido-ambulance-mode-thumb-01.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Rapido Ambulance Mode — Zunaid Ahmed">
+<meta name="twitter:description" content="Emergency ambulance booking: 4.2× faster than phone calls, 91% satisfaction, 68% panic reduction.">
+<meta name="twitter:image" content="../assets/case-studies/images/rapido-ambulance-mode-thumb-01.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../css/site.css">
+<link rel="stylesheet" href="../css/case-study.css">
+</head>
+<body>
+
+<div class="cursor-dot" aria-hidden="true"></div>
+<div class="cursor-ring" aria-hidden="true"></div>
+<div class="grain" aria-hidden="true"></div>
+
+<header class="topbar" id="topbar">
+  <a href="../" class="brand">ZA<span class="brand-dot">.</span></a>
+  <nav class="topnav" aria-label="Primary">
+    <a href="../#work">Work</a>
+    <a href="../#experience">Experience</a>
+    <a href="../#system">Toolkit</a>
+    <a href="../#contact">Contact</a>
+  </nav>
+  <a class="topbar-cta" href="../assets/Zunaid_Ahmed_Resume.pdf" target="_blank" rel="noopener">Résumé ↗</a>
+  <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
+</header>
+
+<main>
+
+  <!-- HERO -->
+  <section class="cs-hero">
+    <a href="../" class="cs-back"><span class="cs-back-arrow">←</span> Back to portfolio</a>
+    <p class="cs-hero-tag">RAPIDO · HEALTHCARE + MOBILITY · UI/UX CASE STUDY</p>
+    <h1 class="cs-hero-title">Rapido Ambulance Mode</h1>
+    <p class="cs-hero-lede">
+      A medical emergency is one of the most cognitively overwhelming moments a person can experience.
+      This project redesigned that experience — cutting a 15–20 minute, panic-driven phone-call scramble
+      down to a guided, sub-60-second booking with live ICU visibility and automatic family notification.
+    </p>
+    <div class="cs-meta-row">
+      <div class="cs-meta-item">
+        <span class="cs-meta-label">ROLE</span>
+        <span class="cs-meta-value">UI/UX Designer</span>
+      </div>
+      <div class="cs-meta-item">
+        <span class="cs-meta-label">COMPANY</span>
+        <span class="cs-meta-value">Rapido</span>
+      </div>
+      <div class="cs-meta-item">
+        <span class="cs-meta-label">TOOLS</span>
+        <span class="cs-meta-value">Figma · FigJam · Prototyping</span>
+      </div>
+      <div class="cs-meta-item">
+        <span class="cs-meta-label">PLATFORM</span>
+        <span class="cs-meta-value">iOS · Android</span>
+      </div>
+      <div class="cs-meta-item">
+        <span class="cs-meta-label">DURATION</span>
+        <span class="cs-meta-value">8 weeks</span>
+      </div>
+    </div>
+    <a class="cs-pdf-cta" href="../assets/case-studies/rapido-ambulance-mode.pdf" target="_blank" rel="noopener">
+      View full PDF ↗
+    </a>
+    <figure class="cs-img-hero">
+      <img src="../assets/case-studies/images/rapido-cover.jpg" alt="Rapido Ambulance Mode — emergency booking screens showing hospital map, ambulance selection, and live tracking">
+    </figure>
+  </section>
+
+  <!-- 01 OVERVIEW -->
+  <section class="cs-section">
+    <p class="cs-section-label">01 — OVERVIEW</p>
+    <h2 class="cs-section-title">What we set out to build</h2>
+    <div class="cs-body">
+      <p>
+        Rapido is India's largest bike-taxi platform — but during a medical emergency, people reach for their
+        phone and start calling. The goal was to build an Ambulance Mode directly into the Rapido app that
+        removes every unnecessary decision, shows ICU availability in real-time, and gets help moving in under 60 seconds.
+      </p>
+    </div>
+    <div class="cs-card-grid" style="margin-top: var(--space-6);">
+      <div class="cs-card">
+        <p class="cs-card-num">01</p>
+        <h4>Find nearby hospitals</h4>
+        <p>Show ICU capacity, specialisation, and real-time bed data upfront.</p>
+      </div>
+      <div class="cs-card">
+        <p class="cs-card-num">02</p>
+        <h4>Book instantly</h4>
+        <p>One-tap selection of BLS, ALS, or ICU-on-Wheels with live ETAs.</p>
+      </div>
+      <div class="cs-card">
+        <p class="cs-card-num">03</p>
+        <h4>Track in real-time</h4>
+        <p>Live map tracking and driver communication during the emergency.</p>
+      </div>
+      <div class="cs-card">
+        <p class="cs-card-num">04</p>
+        <h4>Auto-notify family</h4>
+        <p>Family members receive automatic alerts — no extra steps required.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 02 PROBLEM -->
+  <section class="cs-section">
+    <p class="cs-section-label">02 — PROBLEM</p>
+    <h2 class="cs-section-title">The problem with calling for an ambulance</h2>
+    <div class="cs-problem-quote">
+      <p>"During medical emergencies, every second matters — yet users juggle multiple phone calls,
+      have no visibility into ambulance location, and receive no information about ICU availability."</p>
+    </div>
+    <div class="cs-card-grid">
+      <div class="cs-card">
+        <p class="cs-card-num">01</p>
+        <h4>Slow response</h4>
+        <p>Finding an ambulance across multiple phone calls takes 15–20 precious minutes.</p>
+      </div>
+      <div class="cs-card">
+        <p class="cs-card-num">02</p>
+        <h4>No visibility</h4>
+        <p>Users cannot track ambulance location or estimate arrival time during the emergency.</p>
+      </div>
+      <div class="cs-card">
+        <p class="cs-card-num">03</p>
+        <h4>Hospital confusion</h4>
+        <p>No information on emergency facilities, ICU beds, or medical specialisations.</p>
+      </div>
+      <div class="cs-card">
+        <p class="cs-card-num">04</p>
+        <h4>Communication gap</h4>
+        <p>Family members are left uninformed during critical emergencies — adding to panic.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 03 USERS -->
+  <section class="cs-section">
+    <p class="cs-section-label">03 — USERS</p>
+    <h2 class="cs-section-title">Who uses this in a real emergency</h2>
+    <div class="cs-body">
+      <p>
+        The primary user is not a calm, prepared person — it's someone in a panic state, likely managing a
+        loved one's emergency rather than their own. Secondary users include ambulance dispatchers and
+        hospital staff who receive routing information.
+      </p>
+    </div>
+    <div class="cs-two-col" style="margin-top: var(--space-6);">
+      <div class="cs-col">
+        <h4>Primary: The family manager</h4>
+        <ul>
+          <li>Urban/semi-urban, aged 25–55</li>
+          <li>Cognitive load is at maximum — trembling hands, blurred focus</li>
+          <li>Needs guidance, not options</li>
+          <li>Cannot read dense text or make complex decisions</li>
+          <li>Wants reassurance that help is on its way</li>
+        </ul>
+      </div>
+      <div class="cs-col">
+        <h4>Secondary: The patient themselves</h4>
+        <ul>
+          <li>May be the one booking while injured or ill</li>
+          <li>Even less capacity for decision-making than a bystander</li>
+          <li>Needs one-tap access with minimal friction</li>
+          <li>Requires high contrast, large tap targets</li>
+          <li>Needs confirmation that notification was sent</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- 04 RESEARCH -->
+  <section class="cs-section">
+    <p class="cs-section-label">04 — RESEARCH</p>
+    
+    <div class="cs-img-block">
+      <img src="../assets/case-studies/images/rapido-research.jpg" alt="Research findings — 85% prefer instant booking, 70% need real-time tracking, 65% want hospital ICU info, with user quotes">
+    </div>
+    <div class="cs-img-block" style="margin-top: var(--space-4);">
+      <img src="../assets/case-studies/images/rapido-empathy.jpg" alt="Empathy map — Says, Thinks, Does, Feels quadrants showing panic state during a medical emergency">
+    </div>
+    <p class="cs-img-caption">Empathy map capturing the cognitive state of someone managing a medical emergency</p>
+  </section>
+
+  <!-- 05 KEY INSIGHTS -->
+  <section class="cs-section">
+    <p class="cs-section-label">05 — KEY INSIGHTS</p>
+    <h2 class="cs-section-title">What the research revealed</h2>
+    <div class="cs-heuristic-list">
+      <div class="cs-heuristic-item">
+        <span class="cs-heuristic-num">INSIGHT 01</span>
+        <div>
+          <h4>Panic state demands guided flows, not open choices</h4>
+          <p>Users in crisis cannot evaluate options. Every additional decision point increased time-to-booking and perceived stress. The solution had to be a guided sequence — not a menu.</p>
+        </div>
+      </div>
+      <div class="cs-heuristic-item">
+        <span class="cs-heuristic-num">INSIGHT 02</span>
+        <div>
+          <h4>ICU data reduces anxiety even when ETA is uncertain</h4>
+          <p>Knowing a hospital has available ICU beds calmed users significantly — even when the ambulance hadn't been dispatched yet. Information itself is a stress reducer.</p>
+        </div>
+      </div>
+      <div class="cs-heuristic-item">
+        <span class="cs-heuristic-num">INSIGHT 03</span>
+        <div>
+          <h4>Family notification removes a major cognitive burden</h4>
+          <p>One of the top stressors was "I have to call my family." Automatic notification eliminated this entirely — users ranked this feature as highly as real-time tracking.</p>
+        </div>
+      </div>
+      <div class="cs-heuristic-item">
+        <span class="cs-heuristic-num">INSIGHT 04</span>
+        <div>
+          <h4>Ambulance type is confusing — cost and care level must be visible together</h4>
+          <p>Users didn't know the difference between BLS and ALS. Showing cost and what's included (oxygen, defibrillator, paramedic) removed the confusion entirely.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 06 DESIGN PROCESS -->
+  <section class="cs-section">
+    <p class="cs-section-label">06 — DESIGN PROCESS</p>
+    <h2 class="cs-section-title">From research to screens</h2>
+    <div class="cs-body">
+      <p>
+        A 7-stage double-diamond process: starting with user interviews and field study,
+        through problem definition and persona building, to high-fidelity UI and usability testing.
+      </p>
+    </div>
+    <div class="cs-process-steps">
+      <div class="cs-step">
+        <span class="cs-step-num">01</span>
+        <h4>Research</h4>
+        <p>User interviews + field study</p>
+      </div>
+      <div class="cs-step">
+        <span class="cs-step-num">02</span>
+        <h4>Define</h4>
+        <p>Problems + personas</p>
+      </div>
+      <div class="cs-step">
+        <span class="cs-step-num">03</span>
+        <h4>User Flow</h4>
+        <p>Journey + architecture</p>
+      </div>
+      <div class="cs-step">
+        <span class="cs-step-num">04</span>
+        <h4>Wireframes</h4>
+        <p>Low-fi sketches</p>
+      </div>
+      <div class="cs-step">
+        <span class="cs-step-num">05</span>
+        <h4>UI Design</h4>
+        <p>High-fidelity screens</p>
+      </div>
+      <div class="cs-step">
+        <span class="cs-step-num">06</span>
+        <h4>Prototype</h4>
+        <p>Interactive flows</p>
+      </div>
+      <div class="cs-step">
+        <span class="cs-step-num">07</span>
+        <h4>Testing</h4>
+        <p>Usability testing</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 07 FINAL SOLUTION -->
+  <section class="cs-section">
+    <p class="cs-section-label">07 — FINAL SOLUTION</p>
+    <h2 class="cs-section-title">7 steps. Under 60 seconds.</h2>
+    <div class="cs-body">
+      <p>
+        Every step was designed for a panic state — large tap targets, minimal text, high contrast, one clear
+        next action. The flow was tested repeatedly until average completion time fell below 60 seconds.
+      </p>
+    </div>
+    <div class="cs-img-block">
+      <img src="../assets/case-studies/images/rapido-flow.jpg" alt="Complete 7-step booking flow: Open App → Select Emergency → View Hospital Map → Choose Ambulance → Confirm & Pay → Live Tracking → Arrival">
+    </div>
+    <p class="cs-img-caption">7 screens · designed to be completed in under 60 seconds</p>
+    <div class="cs-card-grid" style="margin-top: var(--space-6);">
+      <div class="cs-card">
+        <p class="cs-card-num">STEP 01</p>
+        <h4>Open App</h4>
+        <p>Ambulance Mode visible from the home screen — no hunting.</p>
+      </div>
+      <div class="cs-card">
+        <p class="cs-card-num">STEP 02</p>
+        <h4>Select Emergency</h4>
+        <p>Cardiac, Trauma, Neuro, Maternity, Respiratory, General.</p>
+      </div>
+      <div class="cs-card">
+        <p class="cs-card-num">STEP 03</p>
+        <h4>Hospital Map</h4>
+        <p>Nearby hospitals with ICU bed count and specialisation shown upfront.</p>
+      </div>
+      <div class="cs-card">
+        <p class="cs-card-num">STEP 04</p>
+        <h4>Choose Ambulance</h4>
+        <p>BLS (₹850), ALS (₹1,400), or ICU on Wheels (₹2,200) with live ETAs.</p>
+      </div>
+      <div class="cs-card">
+        <p class="cs-card-num">STEP 05</p>
+        <h4>Confirm &amp; Pay</h4>
+        <p>UPI, card, or insurance claim. Total shown before confirming.</p>
+      </div>
+      <div class="cs-card">
+        <p class="cs-card-num">STEP 06</p>
+        <h4>Live Tracking</h4>
+        <p>Real-time map with driver contact. Family automatically notified.</p>
+      </div>
+      <div class="cs-card">
+        <p class="cs-card-num">STEP 07</p>
+        <h4>Arrival</h4>
+        <p>Arrival confirmation, departure prompt. Family checkmarks visible.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 08 DESIGN SYSTEM -->
+  <section class="cs-section">
+    <p class="cs-section-label">08 — DESIGN SYSTEM</p>
+    <h2 class="cs-section-title">Components built for emergencies</h2>
+    <div class="cs-body">
+      <p>
+        Every component was designed with panic-state constraints — high contrast buttons, colour-coded
+        hospital tags (ICU, Cardiac Care, Trauma), clear map pin hierarchy, and an ambulance card with
+        all critical information visible at a glance.
+      </p>
+    </div>
+    <div class="cs-img-block">
+      <img src="../assets/case-studies/images/rapido-components.jpg" alt="Design system: Book Now button, Emergency SOS button, hospital tags, map pins, and ambulance card components">
+    </div>
+    <p class="cs-img-caption">Buttons · Hospital tags · Map pins · Ambulance card — the core component set</p>
+  </section>
+
+  <!-- 09 BEFORE VS AFTER -->
+  <section class="cs-section">
+    <p class="cs-section-label">09 — BEFORE VS AFTER</p>
+    <h2 class="cs-section-title">The difference the design makes</h2>
+    <div class="cs-two-col">
+      <div class="cs-col">
+        <h4>Before — Phone-based booking</h4>
+        <ul>
+          <li>4–6 phone calls to find an available ambulance</li>
+          <li>15–20 minutes from emergency to dispatch</li>
+          <li>No visibility into ambulance location</li>
+          <li>No hospital ICU data — guessing which hospital to go to</li>
+          <li>Family members not informed unless called separately</li>
+          <li>High cognitive load — all decisions made under panic</li>
+        </ul>
+      </div>
+      <div class="cs-col">
+        <h4>After — Rapido Ambulance Mode</h4>
+        <ul>
+          <li>1 app flow, no calls needed</li>
+          <li>Under 60 seconds from open to dispatch</li>
+          <li>Real-time ambulance tracking on map</li>
+          <li>Live ICU bed count and hospital specialisation</li>
+          <li>Family auto-notified immediately on booking</li>
+          <li>Guided flow eliminates all unnecessary decisions</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- 10 BUSINESS IMPACT -->
+  <section class="cs-section">
+    <p class="cs-section-label">10 — BUSINESS IMPACT</p>
+    <h2 class="cs-section-title">Results from usability testing</h2>
+    
+    <div class="cs-img-block" style="margin-top: var(--space-6);">
+      <img src="../assets/case-studies/images/rapido-results.jpg" alt="Outcome metrics: 4.2× faster booking, 91% satisfaction, 68% panic reduction, 3 min time saved">
+    </div>
+    <p class="cs-img-caption">Usability testing results across 120+ users in 8 cities</p>
+  </section>
+
+  <!-- 11 KEY LEARNINGS -->
+  <section class="cs-section">
+    <p class="cs-section-label">11 — KEY LEARNINGS</p>
+    <h2 class="cs-section-title">What this project taught me</h2>
+    <div class="cs-heuristic-list">
+      <div class="cs-heuristic-item">
+        <span class="cs-heuristic-num">LEARNING 01</span>
+        <div>
+          <h4>Designing for extreme states is designing for everyone</h4>
+          <p>Optimising for panic — large targets, minimal text, guided steps — made the flow better for all users, not just those in emergencies. Stress-testing for the hardest case produces the clearest design.</p>
+        </div>
+      </div>
+      <div class="cs-heuristic-item">
+        <span class="cs-heuristic-num">LEARNING 02</span>
+        <div>
+          <h4>Information is care</h4>
+          <p>Showing ICU data, ambulance type, and ETA wasn't just useful — it was emotionally reassuring. The interface reduced anxiety not through soft copy but through concrete, real-time information.</p>
+        </div>
+      </div>
+      <div class="cs-heuristic-item">
+        <span class="cs-heuristic-num">LEARNING 03</span>
+        <div>
+          <h4>Automation beats optional features in crisis flows</h4>
+          <p>Family notification worked because it was automatic — not a toggle or a step. Any friction in a crisis flow means it won't be used. Remove the choice entirely when the action is universally correct.</p>
+        </div>
+      </div>
+    </div>
+    
+  </section>
+
+</main>
+
+<!-- 12 NEXT PROJECT -->
+<nav class="cs-next" aria-label="More case studies">
+  <p class="cs-next-title">NEXT PROJECTS</p>
+  <div class="cs-next-grid">
+    <a href="volopay-virtual-cards.html" class="cs-next-card">
+      <p class="cs-next-card-tag">FINTECH · B2B SAAS</p>
+      <h4>Volopay — Virtual Cards</h4>
+      <span class="cs-next-card-link">View case study →</span>
+    </a>
+    <a href="emax-product-comparison.html" class="cs-next-card">
+      <p class="cs-next-card-tag">ECOMMERCE</p>
+      <h4>Emax — Product Comparison</h4>
+      <span class="cs-next-card-link">View case study →</span>
+    </a>
+    <a href="tesla-infotainment.html" class="cs-next-card">
+      <p class="cs-next-card-tag">AUTOMOTIVE · IN-CAR UX</p>
+      <h4>Tesla — Infotainment System</h4>
+      <span class="cs-next-card-link">View case study →</span>
+    </a>
+  </div>
+</nav>
+
+<footer class="site-footer">
+  <p>Zunaid Ahmed — Senior Product Designer, Hyderabad.</p>
+  <p class="mono">© <span id="year"></span></p>
+</footer>
+
+<button class="back-to-top" id="backToTop" aria-label="Back to top">↑</button>
+
+<script src="../js/site.js"></script>
+</body>
+</html>
