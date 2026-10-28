@@ -3,16 +3,16 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Zunaid Ahmed — Senior Product Designer</title>
-<meta name="description" content="Senior Product Designer in Hyderabad with 6+ years designing enterprise web, Android and SaaS products: complex workflows, design systems, accessibility and human-AI interaction.">
+<title>Zunaid Ahmed — AI-Native Product Designer</title>
+<meta name="description" content="AI-native Senior Product Designer building design agents, automated design workflows and UX intelligence systems. Creator of UX Direct, an AI UX agent that designs natively in Figma.">
 <link rel="canonical" href="https://zunaidxdesign.vercel.app/">
 <meta property="og:url" content="https://zunaidxdesign.vercel.app/">
 <meta property="og:type" content="website">
-<meta property="og:title" content="Zunaid Ahmed — Senior Product Designer">
-<meta property="og:description" content="Enterprise UX, native Android, design systems and AI-native product design.">
+<meta property="og:title" content="Zunaid Ahmed — AI-Native Product Designer">
+<meta property="og:description" content="Design agents, automated design workflows and UX intelligence, from a designer who ships the tooling.">
 <meta property="og:image" content="assets/case-studies/images/rapido-cover.jpg">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="theme-color" content="#F4F3EE">
+<meta name="theme-color" content="#06070A">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
@@ -20,160 +20,286 @@
 </head>
 <body>
 <a class="skip" href="#work">Skip to work</a>
+<div class="progress" id="progress" aria-hidden="true"></div>
+<div class="spotlight" id="spotlight" aria-hidden="true"></div>
 
 <header class="nav" id="nav">
-  <a href="#top" class="brand" aria-label="Zunaid Ahmed, home">ZA<span>.</span></a>
+  <a href="#top" class="brand" aria-label="Zunaid Ahmed, home"><span class="brand-mark">ZA</span><span class="brand-dot"></span></a>
   <nav aria-label="Primary">
+    <a href="#agent">Agent</a>
+    <a href="#intelligence">Intelligence</a>
+    <a href="#workflow">Workflow</a>
     <a href="#work">Work</a>
-    <a href="#about">About</a>
     <a href="#experience">Experience</a>
-    <a href="#system">Toolkit</a>
     <a href="#contact">Contact</a>
   </nav>
-  <a class="btn btn-sm" href="assets/Zunaid_Ahmed_Resume.pdf" target="_blank" rel="noopener">Résumé ↗</a>
+  <div class="nav-right">
+    <button class="kbd-btn" id="openPalette" type="button" aria-label="Open command menu"><span>Jump to</span><kbd>⌘K</kbd></button>
+    <a class="btn btn-sm magnetic" href="assets/Zunaid_Ahmed_Resume.pdf" target="_blank" rel="noopener">Résumé ↗</a>
+  </div>
 </header>
 
 <main id="top">
 
   <!-- HERO -->
-  <section class="hero">
-    <p class="eyebrow"><span class="dot"></span> Senior Product Designer · Hyderabad, India · Open to work</p>
-    <h1>I design enterprise products<br>that make <em>complex work</em> feel simple.</h1>
-    <p class="lede">6+ years across enterprise SaaS, native Android, fintech and healthcare. I turn messy requirements into clear workflows, scalable design systems and interfaces people trust, with AI as part of the process, not the point.</p>
-    <div class="cta">
-      <a class="btn" href="#work">View selected work</a>
-      <a class="btn btn-ghost" href="mailto:xunayd786@gmail.com">xunayd786@gmail.com</a>
+  <section class="hero" id="hero">
+    <canvas id="neural" aria-hidden="true"></canvas>
+    <div class="hero-inner">
+      <p class="status"><span class="pulse"></span> Open to work · Senior Product Designer · Hyderabad</p>
+      <h1 class="hero-title">
+        <span class="line"><span>AI-native</span></span>
+        <span class="line"><span>product designer</span></span>
+        <span class="line"><span class="grad">who builds the agents.</span></span>
+      </h1>
+      <p class="lede">I design products people trust, and the <strong>design agents, automated workflows and UX intelligence systems</strong> that make teams ship them faster. Creator of <em>UX Direct</em>: an AI UX designer that works natively inside Figma.</p>
+
+      <p class="typed" aria-live="off"><span class="prompt">&gt;</span> <span id="typed"></span><span class="caret"></span></p>
+
+      <div class="cta">
+        <a class="btn magnetic" href="#agent">Watch the agent work <span class="arr">↓</span></a>
+        <a class="btn btn-ghost magnetic" href="#work">Selected work</a>
+      </div>
+
+      <dl class="stats">
+        <div><dt data-count="6" data-suffix="+">0</dt><dd>years in product design</dd></div>
+        <div><dt data-count="23" data-suffix="%">0</dt><dd>task-completion lift from A/B testing</dd></div>
+        <div><dt data-count="28" data-suffix="%">0</dt><dd>fewer support tickets from UX fixes</dd></div>
+        <div><dt data-count="2" data-suffix="">0</dt><dd>AI-native products built, 0→1</dd></div>
+      </dl>
+    </div>
+    <a class="scroll-hint" href="#agent" aria-label="Scroll to agent demo"><span></span></a>
+  </section>
+
+  <!-- MARQUEE -->
+  <div class="marquee" aria-hidden="true">
+    <div class="track">
+      <span>Design agents</span><i>✦</i><span>Native Figma automation</span><i>✦</i><span>UX intelligence</span><i>✦</i><span>Human-AI interaction</span><i>✦</i><span>Design systems</span><i>✦</i><span>Automated QA</span><i>✦</i><span>Agentic workflows</span><i>✦</i>
+      <span>Design agents</span><i>✦</i><span>Native Figma automation</span><i>✦</i><span>UX intelligence</span><i>✦</i><span>Human-AI interaction</span><i>✦</i><span>Design systems</span><i>✦</i><span>Automated QA</span><i>✦</i><span>Agentic workflows</span><i>✦</i>
+    </div>
+  </div>
+
+  <!-- UX DIRECT AGENT -->
+  <section class="section" id="agent">
+    <div class="section-head reveal">
+      <p class="eyebrow">01 · Flagship project</p>
+      <h2>UX Direct. An AI UX designer that <span class="grad">draws in Figma.</span></h2>
+      <p class="sub">A Figma plugin and design agent I'm building. It takes a brief, reads the canvas, writes native Figma layers, preserves your source content and checks its own work against objective quality criteria before it hands anything back.</p>
     </div>
 
-    <dl class="stats">
-      <div><dt>6+</dt><dd>years in product design</dd></div>
-      <div><dt>23%</dt><dd>task-completion lift via A/B testing</dd></div>
-      <div><dt>28%</dt><dd>fewer support tickets from UX fixes</dd></div>
-      <div><dt>8</dt><dd>case studies, web to in-car</dd></div>
-    </dl>
+    <div class="agent reveal">
+      <div class="agent-panel">
+        <div class="panel-bar"><span class="lights"><i></i><i></i><i></i></span><span class="panel-title">ux-direct · agent run</span><span class="badge" id="runState">idle</span></div>
+        <div class="brief">
+          <label for="brief">Brief</label>
+          <div class="brief-field">
+            <input id="brief" type="text" value="Design a clean onboarding screen for a fintech app" spellcheck="false" aria-label="Design brief">
+            <button class="btn btn-sm" id="runAgent" type="button">Run agent ▸</button>
+          </div>
+          <div class="chips-row" id="presets">
+            <button type="button" data-brief="Redesign a pricing page with three tiers">Pricing page</button>
+            <button type="button" data-brief="Dashboard for clinical trial eligibility screening">Clinical dashboard</button>
+            <button type="button" data-brief="Mobile checkout with saved cards and UPI">Mobile checkout</button>
+          </div>
+        </div>
+        <ol class="steps" id="steps">
+          <li data-step="0"><span class="n">01</span><div><b>Plan the task</b><small>Break the brief into screens, states and content to preserve</small></div><span class="tick"></span></li>
+          <li data-step="1"><span class="n">02</span><div><b>Read the canvas</b><small>Inspect existing frames, styles and design-system rules</small></div><span class="tick"></span></li>
+          <li data-step="2"><span class="n">03</span><div><b>Write native layers</b><small>Auto-layout frames, real text, tokens. Not flattened images</small></div><span class="tick"></span></li>
+          <li data-step="3"><span class="n">04</span><div><b>Run quality checks</b><small>Spacing, contrast, hierarchy, content integrity</small></div><span class="tick"></span></li>
+          <li data-step="4"><span class="n">05</span><div><b>Iterate &amp; hand back</b><small>Fix what failed, re-check, surface it for human review</small></div><span class="tick"></span></li>
+        </ol>
+        <div class="log" id="log" role="log" aria-live="polite"></div>
+      </div>
+
+      <div class="canvas-wrap">
+        <div class="canvas-bar"><span>Figma · Page 1</span><span class="zoom">100%</span></div>
+        <div class="canvas" id="canvas">
+          <div class="cursor-agent" id="agentCursor"><svg width="16" height="16" viewBox="0 0 16 16"><path d="M2 1l11 5-5 2-2 5z" fill="currentColor"/></svg><em>UX Direct</em></div>
+          <div class="frame" id="frame">
+            <div class="frame-label" id="frameLabel">Frame 1 · 390 × 844</div>
+            <div class="f-el f-status" data-i="0"></div>
+            <div class="f-el f-logo" data-i="1"></div>
+            <div class="f-el f-title" data-i="2"></div>
+            <div class="f-el f-text" data-i="3"></div>
+            <div class="f-el f-text short" data-i="4"></div>
+            <div class="f-el f-card" data-i="5"><i></i><i></i></div>
+            <div class="f-el f-cta" data-i="6"></div>
+            <div class="f-el f-link" data-i="7"></div>
+          </div>
+          <div class="score" id="score">
+            <div class="score-ring"><svg viewBox="0 0 44 44"><circle cx="22" cy="22" r="19" class="bg"/><circle cx="22" cy="22" r="19" class="fg" id="ring"/></svg><b id="scoreNum">0</b></div>
+            <ul id="checks">
+              <li data-c="0"><span></span>Spacing on 8pt grid</li>
+              <li data-c="1"><span></span>Contrast ≥ 4.5:1</li>
+              <li data-c="2"><span></span>Source content preserved</li>
+              <li data-c="3"><span></span>Tokens, not hex values</li>
+            </ul>
+          </div>
+        </div>
+        <p class="note">Illustrative simulation of the agent loop. The real plugin runs against live Figma files.</p>
+      </div>
+    </div>
+
+    <div class="pillars reveal">
+      <article class="tilt"><span class="ico">◐</span><h3>Native, not flattened</h3><p>Every output is editable Figma: auto-layout, real text, styles. Designers can pick it up and keep going.</p></article>
+      <article class="tilt"><span class="ico">⌘</span><h3>Content-safe</h3><p>The agent preserves source content instead of inventing copy, so nothing quietly changes between brief and canvas.</p></article>
+      <article class="tilt"><span class="ico">✓</span><h3>Self-checking</h3><p>Objective quality criteria run on every pass. Failures trigger iteration, which cuts manual correction.</p></article>
+      <article class="tilt"><span class="ico">⇄</span><h3>Human in the loop</h3><p>I designed the workflow, the quality bar and the design-system rules the agent follows. People approve before anything is written.</p></article>
+    </div>
+  </section>
+
+  <!-- UX INTELLIGENCE -->
+  <section class="section" id="intelligence">
+    <div class="section-head reveal">
+      <p class="eyebrow">02 · UX intelligence system</p>
+      <h2>An agent is only as good as <span class="grad">what it knows.</span></h2>
+      <p class="sub">Behind UX Direct sits an intelligence layer: it audits real sites, benchmarks them against peers, proposes better information architecture, and learns from design feedback.</p>
+    </div>
+
+    <div class="intel reveal">
+      <div class="intel-nav" role="tablist" aria-label="UX intelligence modules">
+        <button role="tab" class="on" data-tab="0" aria-selected="true">Discover</button>
+        <button role="tab" data-tab="1" aria-selected="false">Audit</button>
+        <button role="tab" data-tab="2" aria-selected="false">Benchmark</button>
+        <button role="tab" data-tab="3" aria-selected="false">Re-architect</button>
+        <button role="tab" data-tab="4" aria-selected="false">Learn</button>
+      </div>
+      <div class="intel-body">
+        <div class="intel-pane on" data-pane="0">
+          <div class="txt"><h3>Map the site before judging it</h3>
+          <p>The system crawls a site, builds its page inventory and journeys, and gives every later step a shared map to work from.</p></div>
+          <div class="viz sitemap"><span class="node root">Home</span><span class="node">Products</span><span class="node">Pricing</span><span class="node">Support</span><span class="node">Login</span><span class="node sm">Plans</span><span class="node sm">Compare</span><span class="node sm">FAQ</span><span class="node sm">Contact</span></div>
+        </div>
+        <div class="intel-pane" data-pane="1">
+          <div class="txt"><h3>Page-level audits, consistently scored</h3>
+          <p>Each page is evaluated against the same heuristics and accessibility criteria, so findings are comparable across pages and across time.</p></div>
+          <div class="viz bars">
+            <div><label>Visibility of status</label><i style="--w:82%"></i></div>
+            <div><label>Error prevention</label><i style="--w:56%"></i></div>
+            <div><label>Accessibility</label><i style="--w:68%"></i></div>
+            <div><label>Consistency</label><i style="--w:74%"></i></div>
+          </div>
+          <p class="viz-note">Sample output shape, not client data.</p>
+        </div>
+        <div class="intel-pane" data-pane="2">
+          <div class="txt"><h3>Benchmark against the field</h3>
+          <p>Run the same audit on competitors and see where a product leads, trails or is simply different, before a single screen is redesigned.</p></div>
+          <div class="viz bench">
+            <div class="row head"><span></span><span>You</span><span>Peer A</span><span>Peer B</span></div>
+            <div class="row"><span>Navigation clarity</span><b class="g">●</b><b class="y">●</b><b class="g">●</b></div>
+            <div class="row"><span>Task flow length</span><b class="y">●</b><b class="g">●</b><b class="r">●</b></div>
+            <div class="row"><span>Mobile usability</span><b class="r">●</b><b class="y">●</b><b class="g">●</b></div>
+          </div>
+          <p class="viz-note">Illustrative layout.</p>
+        </div>
+        <div class="intel-pane" data-pane="3">
+          <div class="txt"><h3>From findings to a better IA</h3>
+          <p>Audit and benchmark evidence feed an improved information architecture, so redesign starts from structure, not from taste.</p></div>
+          <div class="viz ia"><div class="col"><b>Before</b><span>Products</span><span>Services</span><span>Solutions</span><span>Offers</span><span>Resources</span><span>Help</span></div><div class="arrow">→</div><div class="col good"><b>After</b><span>Plans &amp; pricing</span><span>Compare</span><span>Get started</span><span>Support</span></div></div>
+        </div>
+        <div class="intel-pane" data-pane="4">
+          <div class="txt"><h3>A shared brain that gets sharper</h3>
+          <p>Approved references and designer feedback are stored as reusable knowledge, with retrieval evals to check that what the agent recalls is actually useful. Client-specific findings stay separate from generalised, approved rules.</p></div>
+          <div class="viz loop"><span>Reference</span><i>→</i><span>Feedback</span><i>→</i><span>Review</span><i>→</i><span>Eval</span><i>→</i><span>Retrieve</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WORKFLOW -->
+  <section class="section" id="workflow">
+    <div class="section-head reveal">
+      <p class="eyebrow">03 · Automated design workflow</p>
+      <h2>From brief to handoff, with <span class="grad">agents in the loop.</span></h2>
+      <p class="sub">How I use AI across a product cycle: automate the repeatable, keep people on the judgement calls.</p>
+    </div>
+    <div class="flow reveal" id="flow">
+      <div class="flow-line"><i id="flowFill"></i></div>
+      <div class="flow-step"><span class="dot"></span><small>Research</small><h3>Synthesize</h3><p>AI clusters notes and flags patterns. I decide what matters.</p><em>Human decides</em></div>
+      <div class="flow-step"><span class="dot"></span><small>Audit</small><h3>Evaluate</h3><p>Automated heuristic and accessibility sweeps give a consistent baseline.</p><em>Agent runs</em></div>
+      <div class="flow-step"><span class="dot"></span><small>Structure</small><h3>Architect</h3><p>Evidence-backed IA proposals, reviewed and reshaped by the designer.</p><em>Agent + human</em></div>
+      <div class="flow-step"><span class="dot"></span><small>Design</small><h3>Build in Figma</h3><p>Design agent writes native layers from the system's tokens and rules.</p><em>Agent runs</em></div>
+      <div class="flow-step"><span class="dot"></span><small>Quality</small><h3>Verify</h3><p>Objective checks catch spacing, contrast and content drift.</p><em>Agent runs</em></div>
+      <div class="flow-step"><span class="dot"></span><small>Handoff</small><h3>Ship</h3><p>Developer-ready specs, tokens and docs, API-aware from day one.</p><em>Human approves</em></div>
+    </div>
   </section>
 
   <!-- WORK -->
   <section class="section" id="work">
     <div class="section-head reveal">
-      <p class="eyebrow">01 · Selected work</p>
-      <h2>Problems with real stakes, designed end to end.</h2>
+      <p class="eyebrow">04 · Selected work</p>
+      <h2>AI-native products, and problems with real stakes.</h2>
     </div>
 
+    <a class="feature reveal tilt" href="trialiq-ai.html">
+      <div class="feature-visual">
+        <img src="assets/case-studies/logos/trialiq-logo.png" alt="TrialIQ AI logo" loading="lazy">
+        <div class="verdict"><span class="vt">AI suggestion</span><b>Likely eligible</b><div class="conf"><i style="--w:78%"></i></div><small>Evidence · Protocol §4.2 · 3 safety signals</small><span class="human">Awaiting coordinator review</span></div>
+      </div>
+      <div class="feature-body">
+        <p class="tag">Own product · Healthcare · AI-native · 2026</p>
+        <h3>TrialIQ AI</h3>
+        <p>A 0→1 workflow platform that helps clinical trial coordinators screen eligibility faster, without blindly trusting an AI verdict. Protocol documentation, participant details and real-time safety signals live in one workspace.</p>
+        <p class="impact">Human-AI interaction · trust &amp; explainability · decision support</p>
+        <span class="more">Read case study →</span>
+      </div>
+    </a>
+
     <div class="work">
-      <a class="card card-feature reveal" href="trialiq-ai.html">
-        <div class="thumb thumb-logo"><img src="assets/case-studies/logos/trialiq-logo.png" alt="TrialIQ AI logo" loading="lazy"></div>
-        <div class="card-body">
-          <p class="tag">Own product · Healthcare · AI-native · 2026</p>
-          <h3>TrialIQ AI</h3>
-          <p>A 0→1 platform that helps clinical trial coordinators screen participant eligibility faster, without asking them to blindly trust an AI verdict. Protocol, eligibility and safety signals live in one workspace.</p>
-          <p class="impact">Human-AI interaction · trust &amp; explainability · decision support</p>
-          <span class="more">Read case study →</span>
-        </div>
-      </a>
-
-      <a class="card reveal" href="case-studies/rapido-ambulance-mode.html">
+      <a class="card reveal tilt" href="case-studies/rapido-ambulance-mode.html">
         <div class="thumb"><img src="assets/case-studies/images/rapido-cover.jpg" alt="Rapido Ambulance Mode cover" loading="lazy"></div>
-        <div class="card-body">
-          <p class="tag">Mobility · Healthcare</p>
-          <h3>Rapido Ambulance Mode</h3>
-          <p>Emergency booking that cuts a 15–20 minute phone scramble to a guided, sub-60-second flow with live ICU visibility.</p>
-          <p class="impact">4.2× faster · 91% satisfaction · 68% lower panic score</p>
-          <span class="more">Read case study →</span>
-        </div>
+        <div class="card-body"><p class="tag">Mobility · Healthcare</p><h3>Rapido Ambulance Mode</h3><p>Emergency booking cut from a 15–20 minute phone scramble to a guided, sub-60-second flow.</p><p class="impact">4.2× faster · 91% satisfaction · 68% lower panic score</p><span class="more">Read case study →</span></div>
       </a>
-
-      <a class="card reveal" href="case-studies/volopay-virtual-cards.html">
+      <a class="card reveal tilt" href="case-studies/volopay-virtual-cards.html">
         <div class="thumb"><img src="assets/case-studies/images/volopay-cover.jpg" alt="Volopay Virtual Cards cover" loading="lazy"></div>
-        <div class="card-body">
-          <p class="tag">Fintech · B2B SaaS</p>
-          <h3>Volopay Virtual Cards</h3>
-          <p>A single-panel creation flow for accountants to issue, assign and track cards, with cost-to-company always in view.</p>
-          <p class="impact">Fewer steps · multi-currency · always-visible CTC</p>
-          <span class="more">Read case study →</span>
-        </div>
+        <div class="card-body"><p class="tag">Fintech · B2B SaaS</p><h3>Volopay Virtual Cards</h3><p>A single-panel flow for accountants to issue, assign and track cards with cost always in view.</p><p class="impact">Fewer steps · multi-currency · always-visible CTC</p><span class="more">Read case study →</span></div>
       </a>
-
-      <a class="card reveal" href="case-studies/emax-product-comparison.html">
+      <a class="card reveal tilt" href="case-studies/emax-product-comparison.html">
         <div class="thumb"><img src="assets/case-studies/images/emax-cover.jpg" alt="Emax Product Comparison cover" loading="lazy"></div>
-        <div class="card-body">
-          <p class="tag">Ecommerce · Responsive web</p>
-          <h3>Emax Product Comparison</h3>
-          <p>Four-product, spec-by-spec comparison for the UAE's largest electronics retailer.</p>
-          <p class="impact">Targets 34% of high-value purchase decisions</p>
-          <span class="more">Read case study →</span>
-        </div>
+        <div class="card-body"><p class="tag">Ecommerce · Responsive web</p><h3>Emax Product Comparison</h3><p>Four-product, spec-by-spec comparison for the UAE's largest electronics retailer.</p><p class="impact">Targets 34% of high-value purchase decisions</p><span class="more">Read case study →</span></div>
       </a>
-
-      <a class="card reveal" href="case-studies/tesla-infotainment.html">
+      <a class="card reveal tilt" href="case-studies/tesla-infotainment.html">
         <div class="thumb"><img src="assets/case-studies/images/tesla-cover.jpg" alt="Tesla infotainment concept cover" loading="lazy"></div>
-        <div class="card-body">
-          <p class="tag">Automotive · Concept</p>
-          <h3>Tesla Infotainment</h3>
-          <p>A 14-screen dark HMI for Level-3 autonomy on Indian roads: glanceable, with progressive disclosure.</p>
-          <p class="impact">Glance-optimised · co-pilot legibility</p>
-          <span class="more">Read case study →</span>
-        </div>
+        <div class="card-body"><p class="tag">Automotive · Concept</p><h3>Tesla Infotainment</h3><p>A 14-screen dark HMI for Level-3 autonomy on Indian roads: glanceable, with progressive disclosure.</p><p class="impact">Glance-optimised · co-pilot legibility</p><span class="more">Read case study →</span></div>
       </a>
-
-      <a class="card reveal" href="case-studies/blinkit-store-manager-widget.html">
+      <a class="card reveal tilt" href="case-studies/blinkit-store-manager-widget.html">
         <div class="thumb"><img src="assets/case-studies/images/blinkit-widget-cover.jpg" alt="Blinkit Store Manager Widget cover" loading="lazy"></div>
-        <div class="card-body">
-          <p class="tag">Q-commerce · Mobile</p>
-          <h3>Blinkit Store Manager Widget</h3>
-          <p>A humanised checkout moment: from impersonal "team" copy to a personal "I'm packing your order".</p>
-          <p class="impact">First-person copy · milestone badges · live context</p>
-          <span class="more">Read case study →</span>
-        </div>
+        <div class="card-body"><p class="tag">Q-commerce · Mobile</p><h3>Blinkit Store Manager Widget</h3><p>A humanised checkout moment: from impersonal "team" copy to a personal "I'm packing your order".</p><p class="impact">First-person copy · milestone badges · live context</p><span class="more">Read case study →</span></div>
       </a>
-
-      <a class="card reveal" href="case-studies/blinkit-heuristic-evaluation.html">
+      <a class="card reveal tilt" href="case-studies/blinkit-heuristic-evaluation.html">
         <div class="thumb"><img src="assets/case-studies/images/blinkit-heuristic-cover.jpg" alt="Blinkit heuristic evaluation cover" loading="lazy"></div>
-        <div class="card-body">
-          <p class="tag">UX research · Audit</p>
-          <h3>Blinkit Heuristic Evaluation</h3>
-          <p>A full Nielsen 10-heuristic review mapping visibility, error-prevention and recall gaps in the live app.</p>
-          <p class="impact">10 heuristics · gaps in H3, H8, H9 · core flow validated</p>
-          <span class="more">Read case study →</span>
-        </div>
+        <div class="card-body"><p class="tag">UX research · Audit</p><h3>Blinkit Heuristic Evaluation</h3><p>A full Nielsen 10-heuristic review mapping visibility, error-prevention and recall gaps.</p><p class="impact">10 heuristics · gaps in H3, H8, H9</p><span class="more">Read case study →</span></div>
       </a>
-
-      <a class="card reveal" href="case-studies/grabon-heuristic-evaluation.html">
+      <a class="card reveal tilt" href="case-studies/grabon-heuristic-evaluation.html">
         <div class="thumb"><img src="assets/case-studies/images/grabon-cover.jpg" alt="GrabOn usability audit cover" loading="lazy"></div>
-        <div class="card-body">
-          <p class="tag">UX research · Redesign</p>
-          <h3>GrabOn Audit &amp; Redesign</h3>
-          <p>Heuristic evaluation of coupon redemption, followed by a thumb-reachable, one-handed redesign.</p>
-          <p class="impact">Less code-copy friction · ergonomic layout</p>
-          <span class="more">Read case study →</span>
-        </div>
+        <div class="card-body"><p class="tag">UX research · Redesign</p><h3>GrabOn Audit &amp; Redesign</h3><p>Heuristic evaluation of coupon redemption, then a thumb-reachable, one-handed redesign.</p><p class="impact">Less code-copy friction · ergonomic layout</p><span class="more">Read case study →</span></div>
       </a>
     </div>
   </section>
 
   <!-- ABOUT -->
-  <section class="section about" id="about">
+  <section class="section" id="about">
     <div class="section-head reveal">
-      <p class="eyebrow">02 · About</p>
-      <h2>Clarity is the product.</h2>
+      <p class="eyebrow">05 · About</p>
+      <h2>Designer who ships the tooling.</h2>
     </div>
     <div class="about-grid reveal">
       <div class="about-copy">
-        <p>I'm a product designer who works best where the problem isn't fully defined yet: competing constraints, dense information, high stakes. I care about interaction details, and just as much about the systems behind them: information architecture, design tokens, API-aware handoff and the decisions an interface enables.</p>
-        <p>I've led UX for a native Android app used in construction surveying, designed analytics and reporting SaaS, and built an AI-native design system. I work daily with product managers, engineers, QA and global client stakeholders.</p>
-        <p>I also build my own tools. UX Direct, a Figma plugin and AI design agent I'm developing, creates native Figma designs and checks them against objective quality criteria.</p>
+        <p>I'm a product designer with 6+ years across enterprise SaaS, native Android, fintech and healthcare. I work best where the problem isn't fully defined: competing constraints, dense information, high stakes.</p>
+        <p>Lately I've been moving design from "tool I operate" to "system I direct": building an AI-native design system, wiring AI into ideation, prototyping and documentation, and creating UX Direct so agents can do the repeatable work while designers keep the judgement.</p>
+        <p>I'm comfortable in code (HTML, CSS, JS, React, Next.js, REST, OpenAPI) and speak engineer, so the handoff is never the weak link.</p>
         <ul class="chips" aria-label="Focus areas">
-          <li>Enterprise workflows</li><li>Native Android</li><li>Design systems</li><li>WCAG 2.1 AA</li><li>Human-AI interaction</li><li>Research &amp; testing</li>
+          <li>Design agents</li><li>Human-AI interaction</li><li>Design systems</li><li>UX audits</li><li>WCAG 2.1 AA</li><li>Enterprise workflows</li><li>Native Android</li>
         </ul>
       </div>
-      <img class="avatar" src="assets/case-studies/images/avatar2.jpg" alt="Portrait of Zunaid Ahmed">
+      <div class="avatar-wrap"><img class="avatar" src="assets/case-studies/images/avatar2.jpg" alt="Portrait of Zunaid Ahmed"><span class="ring"></span></div>
     </div>
   </section>
 
   <!-- EXPERIENCE -->
   <section class="section" id="experience">
     <div class="section-head reveal">
-      <p class="eyebrow">03 · Experience</p>
+      <p class="eyebrow">06 · Experience</p>
       <h2>Six years of enterprise product work.</h2>
     </div>
     <ol class="timeline">
@@ -183,8 +309,8 @@
           <h3>Senior UX Designer <span>LTIMindtree · Topcon Corporation</span></h3>
           <ul>
             <li>Led end-to-end UX for a native Android app for construction surveying and geospatial field workflows, on Material Design 3.</li>
-            <li>Built component libraries and a design-token architecture, plus an AI-native design system.</li>
-            <li>Ran usability tests and heuristic reviews, designing to WCAG 2.1 AA.</li>
+            <li>Built an AI-native design system and integrated AI tools into ideation, prototyping, documentation and designer–developer collaboration.</li>
+            <li>Built component libraries and a design-token architecture; ran usability tests and heuristic reviews to WCAG 2.1 AA.</li>
             <li>Led A/B tests in Figma, Maze and analytics: <strong>+23% task completion</strong>.</li>
           </ul>
         </div>
@@ -195,8 +321,8 @@
           <h3>Product / Creative Design <span>Biva.ai</span></h3>
           <ul>
             <li>Directed UX for SaaS modules: analytics, reporting and decision-support dashboards.</li>
-            <li>Designed around REST APIs, mapping endpoints and error states into loading, empty and validation states; reviewed OpenAPI docs with engineers in Postman.</li>
-            <li>Built design systems and documentation for consistency across responsive web.</li>
+            <li>Designed around REST APIs, mapping endpoints and error states into loading, empty and validation UI; reviewed OpenAPI docs with engineers in Postman.</li>
+            <li>Used AI-powered workflows to speed up ideation and iteration; built design systems and documentation.</li>
           </ul>
         </div>
       </li>
@@ -205,7 +331,7 @@
         <div>
           <h3>UI Designer <span>Saras Analytics</span></h3>
           <ul>
-            <li>Designed data platforms, reporting interfaces and workflow-centric apps for global ecommerce brands.</li>
+            <li>Designed enterprise data platforms and reporting interfaces for global ecommerce brands.</li>
             <li>Ran research, usability testing and prototype validation: <strong>28% fewer support tickets</strong>.</li>
           </ul>
         </div>
@@ -213,40 +339,49 @@
     </ol>
   </section>
 
-  <!-- TOOLKIT -->
-  <section class="section" id="system">
+  <!-- STACK -->
+  <section class="section" id="stack">
     <div class="section-head reveal">
-      <p class="eyebrow">04 · Toolkit</p>
-      <h2>Craft, systems and just enough code.</h2>
+      <p class="eyebrow">07 · Toolkit</p>
+      <h2>Craft, systems and agent-grade tooling.</h2>
     </div>
     <div class="toolkit reveal">
-      <div><h3>Research &amp; strategy</h3><p>User interviews, usability testing, heuristic evaluation, information architecture, user flows, A/B testing</p></div>
-      <div><h3>Design &amp; prototyping</h3><p>Figma, FigJam, interaction design, responsive and adaptive UI, Material Design, Miro, Maze</p></div>
-      <div><h3>Design systems</h3><p>Design tokens, component libraries, documentation, developer-ready specs and handoff</p></div>
-      <div><h3>Accessibility</h3><p>WCAG 2.1 AA, keyboard navigation, focus states, contrast validation, inclusive design</p></div>
-      <div><h3>Front-end &amp; API awareness</h3><p>HTML, CSS, JavaScript, React, Next.js, Tailwind, REST, OpenAPI, Postman, GitHub, Vercel</p></div>
-      <div><h3>AI-assisted design</h3><p>Claude, Claude Code, Figma Make, ChatGPT, GitHub Copilot, prompt-based prototyping, Figma plugin and agent workflows</p></div>
+      <div class="tilt"><h3>AI &amp; agents</h3><p>Claude, Claude Code, Claude Design, Figma Make, ChatGPT, GitHub Copilot, prompt-based prototyping, Figma plugin and agent workflows</p></div>
+      <div class="tilt"><h3>Design &amp; prototyping</h3><p>Figma, FigJam, interaction design, responsive and adaptive UI, Material Design, Miro, Maze</p></div>
+      <div class="tilt"><h3>Design systems</h3><p>Design tokens, component libraries, documentation, developer-ready specs and handoff</p></div>
+      <div class="tilt"><h3>Research &amp; strategy</h3><p>Interviews, usability testing, heuristic evaluation, IA, user flows, A/B testing</p></div>
+      <div class="tilt"><h3>Accessibility</h3><p>WCAG 2.1 AA, keyboard navigation, focus states, contrast validation, inclusive design</p></div>
+      <div class="tilt"><h3>Front-end &amp; API</h3><p>HTML, CSS, JavaScript, React, Next.js, Tailwind, REST, OpenAPI, Postman, GitHub, Vercel, Cloudflare</p></div>
     </div>
   </section>
 
   <!-- CONTACT -->
   <section class="section contact" id="contact">
     <div class="contact-card reveal">
-      <p class="eyebrow light">05 · Contact</p>
-      <h2>Have a complex product to figure out?<br>Let's make something worth using.</h2>
+      <p class="eyebrow">08 · Contact</p>
+      <h2>Building with agents? <br><span class="grad">Let's design what's next.</span></h2>
       <div class="cta">
-        <a class="btn btn-light" href="mailto:xunayd786@gmail.com">Email me ↗</a>
-        <a class="btn btn-outline" href="https://www.linkedin.com/in/zunaidahmed786" target="_blank" rel="noopener">LinkedIn ↗</a>
-        <a class="btn btn-outline" href="assets/Zunaid_Ahmed_Resume.pdf" target="_blank" rel="noopener">Résumé ↗</a>
+        <a class="btn magnetic" href="mailto:xunayd786@gmail.com">Email me ↗</a>
+        <a class="btn btn-ghost magnetic" href="https://www.linkedin.com/in/zunaidahmed786" target="_blank" rel="noopener">LinkedIn ↗</a>
+        <a class="btn btn-ghost magnetic" href="assets/Zunaid_Ahmed_Resume.pdf" target="_blank" rel="noopener">Résumé ↗</a>
       </div>
     </div>
   </section>
 </main>
 
 <footer class="foot">
-  <span>Zunaid Ahmed · Senior Product Designer</span>
+  <span>Zunaid Ahmed · AI-Native Product Designer</span>
   <span>© 2026 · Hyderabad, India</span>
 </footer>
+
+<!-- COMMAND PALETTE -->
+<div class="palette" id="palette" hidden role="dialog" aria-modal="true" aria-label="Command menu">
+  <div class="palette-box">
+    <input id="paletteInput" type="text" placeholder="Jump to…" autocomplete="off" aria-label="Search sections">
+    <ul id="paletteList"></ul>
+    <p class="hint"><kbd>↑</kbd><kbd>↓</kbd> navigate · <kbd>Enter</kbd> go · <kbd>Esc</kbd> close</p>
+  </div>
+</div>
 
 <script src="js/home.js"></script>
 </body>
